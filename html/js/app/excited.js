@@ -7,8 +7,11 @@ var main = function ($scope) {
 var timelineList = function ($scope) {
     $scope.lists = getTimeline();
     //$scope.classUlShow = "hide";
-
     window.location.hash = "new";
+
+    $scope.markItem = function (id) {
+        markItemAnimation(id);
+    };
 
     timelineInit();
 };

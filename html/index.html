@@ -50,13 +50,13 @@
             <li id="{{ list.id }}" class="timeline-list-item {{ list.class }}" ng-repeat="list in lists">
               <div ng-if="list.class == 'timeline-list-item-li'">
                 <div class="timeline-list-info">
-                  <img class='timeline-list-item-avator' ng-model="list.avatorSrc" src="{{ list.avatorSrc }}">
+                  <img class='timeline-list-item-avator' ng-model="list.avatorSrc" src="{{ list.avatorSrc || '' }}">
                   <a class='timeline-list-item-author' href='#'>{{ list.author }}</a>
                   <span class='timeline-list-item-time'>{{ list.time }}</span>
                 </div>
                 <div class='timeline-list-item-content'>{{ list.content }}</div>
                 <div class="timeline-list-btns">
-                  <a href='#' class='timeline-mark-btn'><span></span></a>
+                  <a href='#' class='timeline-mark-btn' ng-click="markItem(list.id)"><span></span></a>
                   <a href='#' class='timeline-retweet-btn'><span></span></a>
                   <a href='#' class='timeline-share-btn'><span></span></a>
                 </div>
@@ -71,7 +71,7 @@
         <div id="follow-list">
           <ul id="follow-list-ul" ng-controller="follow-list">
             <li class="follow-list-item {{ list.class }}" ng-repeat="list in lists">
-              <a class="follow-list-avator-a" href="#"><img class="follow-list-avator" src="{{ list.avator }}"></a>
+              <a class="follow-list-avator-a" href="#"><img class="follow-list-avator" src="{{ list.avator || '' }}"></a>
               <div class="follow-list-info">
                 <p class="follow-list-name">{{ list.name }}</p>
                 <span class="follow-list-desc">{{ list.desc }}</span>

@@ -1,13 +1,16 @@
 // objects
 
+var listNumber = 0;
+
 var timelineLi = function (data) {
     // TODO
-    this.id = "";
+    listNumber++;
+    this.id = "list-item-" + listNumber;
     this.class = "timeline-list-item-li";
     this.avatorSrc = "static/avator-demo.jpeg";
     this.author = "illusate";
     this.time = "2014-11-11 11:11:11";
-    this.content = "EXCITED! This is a item demo.";
+    this.content = "EXCITED! This is a item demo " + listNumber;
 };
 
 var timelineNewItemLi = function (num) {

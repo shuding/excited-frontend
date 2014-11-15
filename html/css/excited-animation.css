@@ -1,9 +1,9 @@
 #timeline-list-ul {
-  -webkit-transition: opacity .3 ease;
-  -moz-transition: opacity .3 ease;
-  -ms-transition: opacity .3 ease;
-  -o-transition: opacity .3 ease;
-  transition: opacity .3 ease;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  -ms-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
 }
 
 #timeline-list-ul.hide {
@@ -12,4 +12,57 @@
 
 #timeline-list-ul.show {
   opacity: 1;
+}
+
+.div-placeholder {
+  display: block;
+  width: 1px;
+  height: 1px;
+}
+
+.timeline-placeholder {
+  animation: timeline-placeholder-animation 800ms ease forwards;
+  -webkit-animation: timeline-placeholder-animation 800ms ease forwards;
+}
+
+.todo-placeholder {
+  animation: todo-placeholder-animation 800ms ease forwards;
+  -webkit-animation: todo-placeholder-animation 800ms ease forwards;
+}
+
+.free-div {
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -ms-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+  overflow: hidden;
+}
+
+@-webkit-keyframes timeline-placeholder-animation {
+  100% {
+    height: 0;
+    margin: 0;
+  }
+}
+
+@keyframes timeline-placeholder-animation {
+  100% {
+    height: 0;
+    margin: 0;
+  }
+}
+
+@-webkit-keyframes todo-placeholder-animation {
+  100% {
+    height: 66px;
+    margin-bottom: 16px;
+  }
+}
+
+@keyframes todo-placeholder-animation {
+  100% {
+    height: 66px;
+    margin-bottom: 16px;
+  }
 }
