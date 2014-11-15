@@ -195,6 +195,54 @@ body,html{
       background-size: 164px 26px;
     }/*#logo*/
 
+    #details-btns{
+      position: absolute;
+      width: 144px;
+      height: 32px;
+      top: 16px;
+      right:16px;
+
+      &:after{
+        .g-clear;
+      }
+
+      a{
+        .g-abtn;
+        .g-bbox;
+        width: 32px;
+        height: 32px;
+        padding: 6px;
+        float: right;
+        margin-left: 16px;
+
+        span:before{ 
+          font-size: 20px;
+          color: @grey1;
+          font-family: 'icomoon';
+        }/*span*/
+      }/*a*/
+
+      .details-share-btn{
+        span:before{
+          content: '\e081';
+        }
+      }/*.details-share-btn*/
+
+      .details-retweet-btn{
+        display: none;
+        span:before{
+          content: '\e039';
+        }
+      }/*details-retweet-btn*/
+
+      .details-mark-btn{
+          span:before{
+            content: '\e009';
+          }
+      }/*.details-mark-btn*/
+
+    }/*#details-btns*/
+
     #userinfo{
       position: absolute;
       width: 198px;
@@ -493,6 +541,7 @@ body,html{
                 }/*.timeline-mark-btn*/
 
                 .timeline-retweet-btn{
+                  display: none;
                   float: right;
                   span:before{
                     content:'\e039';
@@ -741,7 +790,7 @@ body,html{
       #details-info{
         padding-left: 24px;
         padding-right: 24px;
-        margin-bottom: 16px;
+        margin-bottom: 24px;
 
         &:after{
           .g-clear;
@@ -789,6 +838,7 @@ body,html{
           margin-bottom: 16px;
           font-size: 12px;
           line-height: 1.8em;
+          word-wrap:break-word;
         }
         img{
           width: 100%;
