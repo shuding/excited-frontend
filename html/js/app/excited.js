@@ -4,7 +4,8 @@ var domain = "";//http://172.27.221.110";
 
 var app = angular.module("excited", []);
 var todoListItems = [];
-var email = null;
+var email = null,
+    nickname = null;
 
 var redirectLogin = function () {
     $("#overlay").css("display", "inherit");
@@ -31,6 +32,7 @@ var checkLogin = function () {
         if (!signed_in)
             redirectLogin();
         email = data.email;
+        nickname = data.nickname;
     }).error(function () {
         redirectLogin();
     });

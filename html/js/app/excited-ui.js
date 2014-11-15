@@ -78,7 +78,7 @@ $(window).load(function () {
     
     $("#add-new-todo-input").on("keyup", function (event) {
         if(event.keyCode == 13 && this.value){
-
+            createNewItem(this.value, nickname);
         }
     }).on("blur", function (event) {
     });

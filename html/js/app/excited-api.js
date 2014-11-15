@@ -48,6 +48,6 @@ var createNewItem = function (title, content) {
     }).done(function (data) {
         callback(data);
     }).error(function (data) {
-        
+
     });
 };
