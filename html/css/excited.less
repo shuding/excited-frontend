@@ -47,6 +47,7 @@
 
 .g-clear{
   content: '';
+  display: block;
   clear: both;
 }
 
@@ -727,6 +728,74 @@ body,html{
       overflow-x: hidden;
       overflow-y: auto;
       background-color: @white;
+
+      #details-title{
+        margin-left: 24px;
+        padding-right: 24px;
+        padding-left: 16px;
+        border-left: 8px @grey6 solid;
+        margin-top: 36px;
+        color: @grey1;
+      }/*#details-title*/
+
+      #details-info{
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-bottom: 16px;
+
+        &:after{
+          .g-clear;
+        }
+
+        .details-avator{
+          float: left;
+          .g-abtn;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          margin-right: 8px;
+          margin-left: 24px;
+          margin-top: -1px;
+          background-color: @grey5;
+           img{
+            width: 16px;
+            height: 16px;
+           }
+        }/*.details-avator*/
+
+        #detials-source{
+          float: left;
+          font-size: 12px;
+          color: @grey5;
+          cursor: pointer;
+          margin-right: 16px;
+
+        }/*#detials-source*/
+
+        #detials-time{
+          float: left;
+          color:@grey5;
+          font-size: 12px;
+        }/*#detials-time*/
+
+      }/*#details-info*/
+
+      #details-main{
+        p{
+          .g-bbox;
+          width: 100%;
+          padding-left: 24px;
+          padding-right: 24px;
+          margin-bottom: 16px;
+          font-size: 12px;
+          line-height: 1.8em;
+        }
+        img{
+          width: 100%;
+          height: auto;
+          margin-bottom: 16px;
+        }
+      }/*#details-main*/
 
     }/*#details-content*/
 
