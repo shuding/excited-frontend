@@ -5,7 +5,7 @@
 /**************************/
 
 @toolbar-height: 64px;
-@page-width:1190px;
+@page-width:1200px;
 @card-border-radius:4px;
 
 /**************************/
@@ -47,6 +47,7 @@ body,html{
   width: 100%;
   height: 100%;
   background-color:rgb(92,92,92); 
+  font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 
 /**************************/
@@ -81,6 +82,9 @@ body,html{
         .g-abtn;
         width: 100%;
         height: 100%;
+        color: rgb(72,72,72);
+        font-size: 20px;
+        font-weight: bold;
       }/*a.back-btn*/
 
     }/*#navigation*/
@@ -117,6 +121,8 @@ body,html{
         width: 150px;
         padding: 10px;
         font-size:12px;
+        margin-right: 16px;
+        background-color: rgba(0,0,0,0.1);
       }/*.search-input*/
 
       .user-avator{
@@ -126,7 +132,8 @@ body,html{
         width: 32px;
         height: 32px;
         border-radius: 50%;
-
+        background-repeat: no-repeat;
+        background-size: 32px 32px;
       }/*.user-avator*/
 
     }/*#userinfo*/
@@ -223,6 +230,9 @@ body,html{
             padding: 16px;
             width: 100%;
             height: auto;
+            background-color: rgb(255,255,255);
+            border-radius: @card-border-radius;
+            margin-bottom: 16px;
           }/*.timeline-list-item*/
 
         }/*#timeline-list-ul*/
@@ -240,10 +250,25 @@ body,html{
       position: absolute;
       top: 0;
       bottom: 0;
-      left: 878px;
+      right: 0;
       width: 290px;
       float: left;
       padding: 16px;
+
+      #follow-list-ul{
+        .g-listnone;
+
+        .follow-list-item{
+          .g-bbox;
+          width: 100%;
+          height: auto;
+          padding:16px;
+          border-radius: @card-border-radius;
+          background-color: rgb(74,74,74);
+          margin-bottom: 16px;
+        }/*follow-list-item*/
+      }/*follow-list-ul*/
+
     }/*#follow-list*/
 
   }/*#page-container*/
