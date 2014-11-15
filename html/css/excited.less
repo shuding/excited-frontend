@@ -16,7 +16,7 @@
 @grey6:rgb(248,248,248);
 @grey7:rgb(60,60,60);
 @grey8:rgb(53,53,53);
-@grey9:rgb(220,220,220);
+@grey9:rgb(200,200,200);
 @white:rgb(255,255,255);
 @yellow:rgb(255,228,60);
 
@@ -64,11 +64,10 @@
 /**************************/
 @font-face {
   font-family: 'icomoon';
-  src:url('fonts/icomoon.eot?-xtde5a');
-  src:url('fonts/icomoon.eot?#iefix-xtde5a') format('embedded-opentype'),
-    url('fonts/icomoon.woff?-xtde5a') format('woff'),
-    url('fonts/icomoon.ttf?-xtde5a') format('truetype'),
-    url('fonts/icomoon.svg?-xtde5a#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot?#iefix-xtde5a') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?-xtde5a') format('woff'),
+    url('../fonts/icomoon.ttf?-xtde5a') format('truetype'),
+    url('../fonts/icomoon.svg?-xtde5a#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -410,17 +409,32 @@ body,html{
                 border-bottom-left-radius:4px; 
                 border-bottom-right-radius:4px;
 
-                .timeline-mark-btn{
-                  .g-abtn;
-                  width: 32px;
-                  height: 32px;
-                  background-color: @grey5;
-                  font-size: 24px;
+                &:after{
+                  .g-clear;
+                }
 
-                  span:before{
-                    content: "\e009";
+                .timeline-mark-btn,.timeline-retweet-btn,.timeline-share-btn{
+                  .g-abtn;
+                  .g-bbox;
+                  width: 48px;
+                  height: 48px;
+                  color:@grey4;
+                  padding: 15px;
+
+                  span{
+                    font-size: 18px;
                   }
-                } /*timeline-mark-btn*/
+
+                }/*.timeline-mark-btn,.timeline-retweet-btn,.timeline-share-btn*/
+
+                .timeline-mark-btn{
+                  float: left;
+                }/*.timeline-mark-btn*/
+
+                .timeline-retweet-btn,.timeline-share-btn{
+                  float: right;
+                }/*.timeline-retweet-btn,.timeline-share-btn*/
+
             }/*timeline-list-btns*/
 
           }/*.timeline-list-item*/
@@ -510,6 +524,9 @@ body,html{
           }/*.follow-list-info*/
 
           .follow-list-add-btn{
+            .g-bbox;
+            padding: 5px;
+            padding-left: 7px;
             background-color: @yellow;
             border-radius: 4px;
             margin-top: 4px;
@@ -517,6 +534,13 @@ body,html{
             width: 28px;
             height: 28px;
             float: right;
+
+            span:before{
+              content: '\e114';
+              font-family: 'icomoon';
+              color: @grey1;
+              font-size: 14px;
+            }
           }/*.follow-list-add-btn*/
 
 
