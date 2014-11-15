@@ -6,10 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title></title>
   <script src="js/lib/angular.min.js"></script>
+  <script src="js/app/excited.js"></script>
 </head>
-<body>
-  <div id="container">
+<body ng-controller="main">
+  <div id="main-container">
     <div id="toolbar"></div>
+    <div id="page">
+      <div id="page-container">
+        <div id="todo-list"></div>
+        <div id="time-line"></div>
+        <div id="follow-list"></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
