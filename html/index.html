@@ -40,9 +40,11 @@
           <ul id="timeline-list-ul" ng-controller="timeline-list">
             <li class="timeline-list-item {{ list.class }}" ng-repeat="list in lists">
               <div ng-if="list.class == 'timeline-list-item-li'">
-                <img class='timeline-list-item-avator' ng-model="list.avatorSrc" src="{{ list.avatorSrc }}">
-                <a class='timeline-list-item-author' href='#'>{{ list.author }}</a>
-                <span class='timeline-list-item-time'>{{ list.time }}</span>
+                <div class="timeline-list-info">
+                  <img class='timeline-list-item-avator' ng-model="list.avatorSrc" src="{{ list.avatorSrc }}">
+                  <a class='timeline-list-item-author' href='#'>{{ list.author }}</a>
+                  <span class='timeline-list-item-time'>{{ list.time }}</span>
+                </div>
                 <div class='timeline-list-item-content'>{{ list.content }}</div>
                 <div>
                   <a href='#' class='timeline-mark-btn'></a>
