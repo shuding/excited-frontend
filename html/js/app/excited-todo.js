@@ -5,6 +5,7 @@ var todolistLi = function (data) {
     this.class = "todolist-item-li";
     this.title = data.item.title;
     this.desc = data.item.source;
+    this.finished = data.finished;
 };
 
 // functions

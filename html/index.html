@@ -59,7 +59,17 @@
         <div id="todo-list" ng-controller="todo-list">
           <input class="add-todo-input" placeholder="Add an item" type="text" ng-keyup="addNewTodo()" ng-model="newTodoText">
           <ul id="todo-list-ul">
-            <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists">
+            <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists | filter: { finished: false }">
+              <a href="#" class="todo-list-item-checkbox"></a>
+              <div class="todo-list-item-content">
+                <p class="todo-list-item-title">{{ list.title }}</p>
+                <span class="todo-list-item-desc">{{ list.desc }}</span>
+              </div>
+            </li>
+          </ul>
+          <a class="todo-list-show-finished">Show finished items</a>
+          <ul class="todo-list-finished-items">
+            <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists | filter: { finished: true }">
               <a href="#" class="todo-list-item-checkbox"></a>
               <div class="todo-list-item-content">
                 <p class="todo-list-item-title">{{ list.title }}</p>
