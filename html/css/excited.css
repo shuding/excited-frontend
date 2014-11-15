@@ -388,8 +388,18 @@ html {
   background-color: #f8f8f8;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  /*timeline-mark-btn*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003336}}
+#page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-mark-btn {
+  display: block;
+  text-decoration: none;
+  -webkit-tap-highlight-color: #000000;
+  width: 32px;
+  height: 32px;
+  background-color: #d2d2d2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003346}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item-new-li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -399,7 +409,7 @@ html {
   color: #969696;
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003362}}
 #page #page-container #follow-list {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -415,14 +425,14 @@ html {
   padding: 16px;
   /*follow-list-ul*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003374}}
 #page #page-container #follow-list #follow-list-ul {
   list-style: none;
   padding: 0;
   margin: 0;
   /*follow-list-item*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003377}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
