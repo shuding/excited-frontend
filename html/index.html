@@ -21,6 +21,16 @@
 <body ng-controller="main">
   <div id="main-container">
     <div id="overlay">
+      <div id="details-container">
+        <div id="details-prev-btn"><span></span></div>
+        <div id="details-content">
+          <h2 id="details-title"></h2>
+          <span id="detials-time"></span>
+          <span id="detials-source"></span>
+          <p id="details-main"></p>
+        </div>
+        <div id="details-next-btn"><span></span></div>
+      </div>
       <div id="warning">
         <h3>Please login.</h3>
         <p>Redirecting to login page in <span id="second"></span>s.</p>
@@ -36,6 +46,11 @@
           <a class="user-avator" href="#" style="background-image: url({{ userInfo.avator }})"></a>
           <input class="search-input" type="search">
           <div class="search-btn"></div>
+        </div>
+        <div id="details-btns">
+          <a href='#' class='details-share-btn'><span></span></a>
+          <a href='#' class='details-retweet-btn'><span></span></a>
+          <a href='#' class='details-mark-btn'><span></span></a>
         </div>
       </div>
     </div>

@@ -60,6 +60,7 @@ var markItemAnimation = function (id) {
     setTimeout(function () {
         $todoPlaceholder.css("display", "none");
         $newTodo.css("position", "inherit");
+        $item.css("display", "none");
     }, 800);
 };
 
