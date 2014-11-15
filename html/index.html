@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/excited.css">
   <script src="js/lib/angular.min.js"></script>
+  <script src="js/app/excited-api.js"></script>
   <script src="js/app/excited-toolbar.js"></script>
   <script src="js/app/excited-timeline.js"></script>
   <script src="js/app/excited-todo.js"></script>
@@ -16,13 +17,15 @@
 <body ng-controller="main">
   <div id="main-container">
     <div id="toolbar" ng-controller="toolbar">
-      <div id="navigation">
-        <a class="back-btn" href="#">BACK</a>
-      </div>
-      <h1 id="logo"></h1>
-      <div id="userinfo">
-        <input class="search-input" type="search">
-        <a class="user-avator" href="#" style="background-image: url({{ userInfo.avator }})"></a>
+      <div id="toolbar-container">
+        <div id="navigation">
+          <a class="back-btn" href="#">BACK</a>
+        </div>
+        <h1 id="logo"></h1>
+        <div id="userinfo">
+          <input class="search-input" type="search">
+          <a class="user-avator" href="#" style="background-image: url({{ userInfo.avator }})"></a>
+        </div>
       </div>
     </div>
     <div id="page">
