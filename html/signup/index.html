@@ -38,7 +38,7 @@
         data: dataJSON,
         dataType: "json",
         contentType : "application/json"
-      }).done(function() {
+      }).done(function(data) {
           if (data.errors.length) {
               //TODO better error handling
           } else {
