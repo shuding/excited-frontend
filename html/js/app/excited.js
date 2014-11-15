@@ -2,7 +2,7 @@
 var domain = "";//http://172.27.221.110";
 // TODO : end debug
 
-var app = angular.module("excited", []);
+var app = angular.module("excited", ['ngSanitize']);
 
 var redirectLogin = function () {
     $("#overlay").css("display", "inherit");
@@ -38,12 +38,10 @@ var main = function ($scope) {
 
 var timelineList = function ($scope) {
     var callback = function (data) {
-        console.log($scope);
         var lists = [];
         for (var i in data) {
             lists.push(new timelineLi(data[i]));
         }
-        console.log(lists);
         $scope.lists = lists;
         $scope.$apply();
     };
