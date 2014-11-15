@@ -1,5 +1,18 @@
+/**************************/
+/*                        */
+/*          变量          */
+/*                        */
+/**************************/
+
 @toolbar-height: 64px;
+@page-width:1190px;
 @card-border-radius:4px;
+
+/**************************/
+/*                        */
+/*          mixin         */
+/*                        */
+/**************************/
 .g-bbox{
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -7,13 +20,40 @@
 }
 .g-listnone{
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.g-abtn{
+  display: block;
+  text-decoration: none;
+  -webkit-tap-highlight-color:rgb(0,0,0,0);
+}
+.g-inputnone{
+  outline: none;
+  border: none;
 }
 
+.g-clear{
+  content: '';
+  clear: both;
+}
+
+/**************************/
+/*                        */
+/*          body          */
+/*                        */
+/**************************/
 body,html{
   width: 100%;
   height: 100%;
   background-color:rgb(92,92,92); 
 }
+
+/**************************/
+/*                        */
+/*         toolbar        */
+/*                        */
+/**************************/
 #toolbar{
   width: 100%;
   height: @toolbar-height;
@@ -21,8 +61,86 @@ body,html{
   top: 0;
   left: 0;
   background-color: rgb(255,228,60);
+
+  #toolbar-container{
+    .g-bbox;
+    position: relative;
+    width: @page-width;
+    height: @toolbar-height;
+    margin: 0 auto;
+    padding: 16px;
+
+    #navigation{
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      top: 16px;
+      left: 16px;
+
+      a.back-btn{
+        .g-abtn;
+        width: 100%;
+        height: 100%;
+      }/*a.back-btn*/
+
+    }/*#navigation*/
+
+    #logo{
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      top: 16px;
+      left:50%;
+      margin-left: -16px;
+      margin: 0;
+      border-radius: 50%;
+      border: 4px rgb(72,72,72) solid;
+    }/*#logo*/
+
+    #userinfo{
+      position: absolute;
+      width: 300px;
+      height: 32px;
+      top: 16px;
+      right:16px;
+
+      &:after{
+        .g-clear;
+      }
+      
+      .search-input{
+        .g-inputnone;
+        .g-bbox;
+        float: right;
+        border-radius: @card-border-radius;
+        height: 32px;
+        width: 150px;
+        padding: 10px;
+        font-size:12px;
+      }/*.search-input*/
+
+      .user-avator{
+        .g-abtn;
+        background-color: rgb(255,255,255);
+        float: right;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+
+      }/*.user-avator*/
+
+    }/*#userinfo*/
+
+  }/*#toobar-container*/
+
 }/* #toolbar */
 
+
+/**************************/
+/*                        */
+/*          page          */
+/*                        */
+/**************************/
 #page{
   position: fixed;
   background-color: rgb(92,92,92);
@@ -33,12 +151,19 @@ body,html{
 
   #page-container{
     position: relative;
-    width: 1190px;
+    width: @page-width;
     height: 100%;
     margin: 0 auto;
 
+    /**************************/
+    /*                        */
+    /*        todo-list       */
+    /*                        */
+    /**************************/
     #todo-list{
       .g-bbox;
+      overflow-x: hidden;
+      overflow-y: auto;
       padding: 16px;
       position: absolute;
       width: 290px;
@@ -48,19 +173,16 @@ body,html{
 
       .add-todo-input{
         .g-bbox;
+        .g-inputnone;
         width: 100%;
         height: 48px;
         background-color: rgb(74,74,74);
-        border: none;
         border-radius: @card-border-radius;
-        outline: none;
         margin-bottom: 16px;
       }/*.add-todo-input*/
 
       #todo-list-ul{
         .g-listnone;
-        padding: 0;
-        margin: 0;
 
         .todo-list-item{
             .g-bbox;
@@ -75,8 +197,16 @@ body,html{
 
     }/*#todo-list*/
 
+
+    /**************************/
+    /*                        */
+    /*        timeline        */
+    /*                        */
+    /**************************/
     #timeline{
       position: absolute;
+      overflow-x: hidden;
+      overflow-y: auto;
       top: 0;
       bottom: 0;
       left: 290px;
@@ -84,16 +214,37 @@ body,html{
       height: 100%;
       float: left;
       background-color: rgb(230,230,230);
-    }
+      padding: 16px;
+        #timeline-list-ul{
+          .g-listnone;
 
+          .timeline-list-item{
+            .g-bbox;
+            padding: 16px;
+            width: 100%;
+            height: auto;
+          }/*.timeline-list-item*/
+
+        }/*#timeline-list-ul*/
+    }/*#timeline*/
+
+    /**************************/
+    /*                        */
+    /*      follow-list       */
+    /*                        */
+    /**************************/
     #follow-list{
+      .g-bbox;
+      overflow-x: hidden;
+      overflow-y: auto;
       position: absolute;
       top: 0;
       bottom: 0;
       left: 878px;
       width: 290px;
       float: left;
-    }
+      padding: 16px;
+    }/*#follow-list*/
 
   }/*#page-container*/
 
