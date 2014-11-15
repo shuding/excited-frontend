@@ -39,6 +39,15 @@
   overflow: hidden;
 }
 
+.free-div-position {
+  -webkit-transition: left .8s ease, top .8s ease, opacity .8s ease, margin-bottom .8s ease;
+  -moz-transition: left .8s ease, top .8s ease, opacity .8s ease, margin-bottom .8s ease;
+  -ms-transition: left .8s ease, top .8s ease, opacity .8s ease, margin-bottom .8s ease;
+  -o-transition: left .8s ease, top .8s ease, opacity .8s ease, margin-bottom .8s ease;
+  transition: left .8s ease, top .8s ease, opacity .8s ease, margin-bottom .8s ease;
+  overflow: hidden;
+}
+
 .disappear-div {
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;

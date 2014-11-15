@@ -76,9 +76,40 @@ var todoList = function ($scope) {
     };
     getTodolist(callback);
 
-    $scope.checkItem = function (id) {
+    $scope.checkItem = function (id, $event) {
+        var $li = $($event.currentTarget.parentNode);
+
         finishItem(id, function () {
-            
+            $li.css({
+                "position": "fixed",
+                "width": "258px",
+                "height": "66px",
+                "margin-bottom": "16px",
+                "top": $li.offset().top + "px",
+                opacity: 1
+            }).addClass("checked");
+
+            var $liPlaceholder = $("<div class='free-div'></div>").css({
+                "width": "258px",
+                "height": "66px",
+                "margin-bottom": "16px"
+            });
+
+            $li.after($liPlaceholder);
+
+            var offset = $(".todo-list-finished-items").offset();
+
+            setTimeout(function () {
+                $li.addClass("free-div-position").css({
+                    top: offset.top - 66 + "px",
+                    "margin-bottom": "0",
+                    opacity: 0
+                });
+                $liPlaceholder.css({
+                    "height": "0",
+                    "margin-bottom": "0"
+                });
+            }, 500);
         });
     };
 };

@@ -20,7 +20,7 @@ var markItemAnimation = function (id) {
     var todoPos = $("#todo-list").offset();
 
     todoPos.left += 16;
-    todoPos.top += 80;
+    todoPos.top += 96;
 
     var $newTodo = $("<li class='todo-list-item'>" +
                      "<a href='#' class='todo-list-item-checkbox'></a>" +

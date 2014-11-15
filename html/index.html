@@ -21,7 +21,7 @@
 </head>
 <body ng-controller="main">
   <div id="main-container">
-    <div id="overlay">
+    <div id="overlay" style="display: none">
       <div id="warning">
         <h3>Please login.</h3>
         <p>Redirecting to login page in <span id="second"></span>s.</p>
@@ -67,7 +67,7 @@
           <input id="add-new-todo-input" class="add-todo-input" placeholder="Add an item" type="text" ng-model="newTodoText">
           <ul id="todo-list-ul">
             <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists | filter: { finished: false }">
-              <a href="#" class="todo-list-item-checkbox" ng-click="checkItem( list.id )"></a>
+              <a href="#" class="todo-list-item-checkbox" ng-click="checkItem( list.id, $event )"></a>
               <div class="todo-list-item-content">
                 <p class="todo-list-item-title">{{ list.title }}</p>
                 <span class="todo-list-item-desc">{{ list.desc }}</span>

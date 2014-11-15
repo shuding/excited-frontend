@@ -54,7 +54,7 @@ var createNewItem = function (title, content) {
 
 var finishItem = function (id, callback) {
     $.ajax({
-        url: "/api/finish-item/",
+        url: "/api/finish-user-item/",
         method: "post",
         data: JSON.stringify({
             user_item_id: id
