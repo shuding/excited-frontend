@@ -39,6 +39,16 @@ var checkLogin = function () {
 };
 
 var main = function ($scope) {
+    $scope.prevList = function () {
+        var index = $scope.timelineList.indexOf($scope.listNow);
+        $scope.listNow = $scope.timelineList[index - 1];
+        $("#details-main").html($scope.listNow.fullContent);
+    }
+    $scope.nextList = function () {
+        var index = $scope.timelineList.indexOf($scope.listNow);
+        $scope.listNow = $scope.timelineList[index + 1];
+        $("#details-main").html($scope.listNow.fullContent);
+    }
 };
 
 var timelineList = function ($scope) {
@@ -49,6 +59,7 @@ var timelineList = function ($scope) {
                 lists.push(new timelineLi(data[i]));
         }
         $scope.lists = lists;
+        $scope.$parent.timelineList = lists;
         $scope.$apply();
     };
     getTimeline(callback);
@@ -59,6 +70,18 @@ var timelineList = function ($scope) {
     $scope.markItem = function (id, itemId) {
         markItemApi(itemId);
         markItemAnimation(id);
+    };
+
+    $scope.showOverlay = function (list, $event) {
+        $scope.$parent.listNow = list;
+
+        $("#details-main").html(list.fullContent);
+        $("#overlay").css({
+            display: "inherit",
+            opacity: 0
+        }).animate({
+            opacity: 1
+        }, 500);
     };
 
     timelineInit();

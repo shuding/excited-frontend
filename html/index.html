@@ -21,26 +21,23 @@
 </head>
 <body ng-controller="main">
   <div id="main-container">
-    <div id="overlay" style="display: none">
+    <div id="overlay">
       <div id="warning">
         <h3>Please login.</h3>
         <p>Redirecting to login page in <span id="second"></span>s.</p>
       </div>
       <div id="details-container">
-        <div id="details-prev-btn"><span></span></div>
+        <div id="details-prev-btn" ng-if="listNow && timelineList.indexOf(listNow) > 0" ng-click="prevList()"><span></span></div>
         <div id="details-content">
-          <h2 id="details-title">Program files produce function javascript python django rubyonrails, fggjhj fhfdghd fgfhhl jkluu</h2>
+          <h2 id="details-title">{{ listNow.title }}</h2>
           <div id="details-info">
             <a class="details-avator"></a>
-            <span id="detials-source">bascnasdc</span>
-            <span id="detials-time">2013/2/2/2/2</span>
+            <span id="detials-source">{{ listNow.author }}</span>
+            <span id="detials-time">{{ listNow.time }}</span>
           </div>
-          <div id="details-main">
-            <p>Program files produce function javascript python django rubyonrails, fggjhj fhfdghd fgfhhl jkluuProgram files produce function javascript python django rubyonrails, fggjhj fhfdghd fgfhhl jkluuProgram files produce function javascript python django rubyonrails, fggjhj fhfdghd fgfhhl jkluu</p>
-            <p>Program files produce function javascript python django rubyonrails, fggjhj fhfdghd fgfhhl jkluuProgram files produce function javascript python django rubyonrails, fggjhj fhfdghd fgfhhl jkluuProgram files produce function javascript python django rubyonrails, fggjhj fhfdghd fgfhhl jkluu</p>
-          </div>
+          <div id="details-main"></div>
         </div>
-        <div id="details-next-btn"><span></span></div>
+        <div id="details-next-btn" ng-if="listNow && timelineList.indexOf(listNow) < timelineList.length - 1" ng-click="nextList()"><span></span></div>
       </div>
     </div>
     <div id="toolbar" ng-controller="toolbar">
@@ -95,7 +92,7 @@
                   <span class='timeline-list-item-time'>{{ list.time }}</span>
                 </div>
                 <img class="timeline-list-item-image" src="{{ list.image }}" ng-if="list.image">
-                <div href="#" class='timeline-list-item-content'><strong ng-if="list.title">{{ list.title }} </strong>{{ list.content }}</div>
+                <div href="#" class='timeline-list-item-content' ng-click="showOverlay( list, $event )"><strong ng-if="list.title">{{ list.title }} </strong>{{ list.content }}</div>
                 <div class="timeline-list-btns">
                   <a href='#' class='timeline-mark-btn' ng-click="markItem(list.id, list.itemId)"><span></span></a>
                   <a href='#' class='timeline-share-btn'><span></span></a>
