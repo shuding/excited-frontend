@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title></title>
   <link rel="stylesheet" href="../css/loginform.css">
+  <script src="../js/lib/jquery-2.1.1.min.js"></script>
 </head>
 <body>
   <div id="container">
@@ -23,7 +24,20 @@
     var form = document.getElementsByTagName("form")[0];
     form.onsubmit = function (e) {
       e.preventDefault();
-      console.log(this);
+      var data = $(this).serializeArray();
+      var dataJSON = {};
+      for (var i in data) {
+        dataJSON[data[i].name] = data[i].value;
+      }
+      dataJSON = JSON.stringify(dataJSON);
+      $.ajax({
+        type: "POST",
+        url: this.action,
+        data: dataJSON,
+        success: function(){},
+        dataType: "json",
+        contentType : "application/json"
+      });
     };
   </script>
 </body>
