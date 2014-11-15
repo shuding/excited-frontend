@@ -75,4 +75,11 @@ $(window).load(function () {
         }
     };
     $("#timeline").on("scroll", scrollFn);
+    
+    $("#add-new-todo-input").on("keyup", function (event) {
+        if(event.keyCode == 13 && this.value){
+
+        }
+    }).on("blur", function (event) {
+    });
 });

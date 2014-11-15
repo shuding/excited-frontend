@@ -36,3 +36,18 @@ var getUserItems = function (callback) {
 
     });
 };
+
+var createNewItem = function (title, content) {
+    $.ajax({
+        url: "/api/create-item/",
+        method: "post",
+        data: JSON.stringify({
+            "title": title,
+            "content": content
+        })
+    }).done(function (data) {
+        callback(data);
+    }).error(function (data) {
+
+    });
+};

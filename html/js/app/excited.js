@@ -73,14 +73,6 @@ var todoList = function ($scope) {
         $scope.$apply();
     };
     getTodolist(callback);
-
-    $scope.addNewTodo = function () {
-        if(event.keyCode == 13 && $scope.newTodoText){
-            $scope.lists.splice(
-                0, 0, new todolistLi($scope.newTodoText)
-            );
-        }
-    }
 };
 
 var followList = function ($scope) {

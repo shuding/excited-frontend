@@ -25,8 +25,11 @@
         <div id="details-prev-btn"><span></span></div>
         <div id="details-content">
           <h2 id="details-title"></h2>
-          <span id="detials-time"></span>
-          <span id="detials-source"></span>
+          <div id="details-info">
+            <a class="details-avator"></a>
+            <span id="detials-source"></span>
+            <span id="detials-time"></span>
+          </div>
           <p id="details-main"></p>
         </div>
         <div id="details-next-btn"><span></span></div>
@@ -57,7 +60,7 @@
     <div id="page">
       <div id="page-container">
         <div id="todo-list" ng-controller="todo-list">
-          <input class="add-todo-input" placeholder="Add an item" type="text" ng-keyup="addNewTodo()" ng-model="newTodoText">
+          <input id="add-new-todo-input" class="add-todo-input" placeholder="Add an item" type="text" ng-model="newTodoText">
           <ul id="todo-list-ul">
             <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists | filter: { finished: false }">
               <a href="#" class="todo-list-item-checkbox"></a>
