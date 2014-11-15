@@ -3,7 +3,9 @@
 var followLi = function (data) {
     // TODO
     this.class = "follow-item-li";
-    this.html = "EXCITED! This is a follow item demo.";
+    this.avator = "static/avator-demo.jpeg";
+    this.name = "illusate";
+    this.desc = "illu";
 };
 
 // functions

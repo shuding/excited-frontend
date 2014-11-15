@@ -31,9 +31,15 @@
     <div id="page">
       <div id="page-container">
         <div id="todo-list">
-          <input class="add-todo-input" type="text"><a class="add-todo-btn" href="#">Add</a>
+          <input class="add-todo-input" type="text">
           <ul id="todo-list-ul" ng-controller="todo-list">
-            <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists">{{ list.html }}</li>
+            <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists">
+              <a href="#" class="todo-list-item-checkbox"></a>
+              <div class="todo-list-item-content">
+                <p class="todo-list-item-title">{{ list.title }}</p>
+                <span class="todo-list-item-desc">{{ list.desc }}</span>
+              </div>
+            </li>
           </ul>
         </div>
         <div id="timeline">
@@ -47,9 +53,9 @@
                 </div>
                 <div class='timeline-list-item-content'>{{ list.content }}</div>
                 <div class="timeline-list-btns">
-                  <a href='#' class='timeline-mark-btn'></a>
-                  <a href='#' class='timeline-retweet-btn'></a>
-                  <a href='#' class='timeline-share-btn'></a>
+                  <a href='#' class='timeline-mark-btn'><span></span></a>
+                  <a href='#' class='timeline-retweet-btn'><span></span></a>
+                  <a href='#' class='timeline-share-btn'><span></span></a>
                 </div>
               </div>
               <div ng-if="list.class == 'timeline-list-item-new-li'">
@@ -60,7 +66,14 @@
         </div>
         <div id="follow-list">
           <ul id="follow-list-ul" ng-controller="follow-list">
-            <li class="follow-list-item {{ list.class }}" ng-repeat="list in lists">{{ list.html }}</li>
+            <li class="follow-list-item {{ list.class }}" ng-repeat="list in lists">
+              <a class="follow-list-avator-a" href="#"><img class="follow-list-avator" src="{{ list.avator }}"></a>
+              <div class="follow-list-info">
+                <p class="follow-list-name">{{ list.name }}</p>
+                <span class="follow-list-desc">{{ list.desc }}</span>
+              </div>
+              <div class="follow-list-add-btn"><span></span></div>
+            </li>
           </ul>
         </div>
       </div>
