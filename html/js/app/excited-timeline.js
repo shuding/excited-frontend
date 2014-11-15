@@ -30,15 +30,15 @@ var timelineNewItemLi = function (num) {
 
 // functions
 
-var getTimeline = function ($scopeLists) {
+var getTimeline = function ($scope) {
     getPublicItems(null, function (data) {
-        //$scopeLists
         var lists = [];
         for (var i in data) {
             lists.push(new timelineLi(data[i]));
         }
         console.log(lists);
-        $scopeLists = lists;
+        $scope.lists = lists;
+        $scope.$apply();
     });
     /*
     return [
