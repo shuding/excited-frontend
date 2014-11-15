@@ -7,6 +7,7 @@
   <title></title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/excited.css">
+  <link rel="stylesheet" href="css/excited-animation.css">
   <script src="js/lib/angular.min.js"></script>
   <script src="js/app/excited-api.js"></script>
   <script src="js/app/excited-toolbar.js"></script>
@@ -43,7 +44,7 @@
           </ul>
         </div>
         <div id="timeline">
-          <ul id="timeline-list-ul" ng-controller="timeline-list">
+          <ul id="timeline-list-ul" class="{{ classUlShow }}" ng-controller="timeline-list">
             <li class="timeline-list-item {{ list.class }}" ng-repeat="list in lists">
               <div ng-if="list.class == 'timeline-list-item-li'">
                 <div class="timeline-list-info">
@@ -62,6 +63,7 @@
                 {{ list.html }}
               </div>
             </li>
+            <li class="timeline-list-item timeline-list-loadmore">Load old excitements!</li>
           </ul>
         </div>
         <div id="follow-list">

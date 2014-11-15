@@ -1,0 +1,15 @@
+#timeline-list-ul {
+  -webkit-transition: opacity .3 ease;
+  -moz-transition: opacity .3 ease;
+  -ms-transition: opacity .3 ease;
+  -o-transition: opacity .3 ease;
+  transition: opacity .3 ease;
+}
+
+#timeline-list-ul.hide {
+  opacity: 0;
+}
+
+#timeline-list-ul.show {
+  opacity: 1;
+}

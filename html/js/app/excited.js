@@ -6,6 +6,8 @@ var main = function ($scope) {
 
 var timelineList = function ($scope) {
     $scope.lists = getTimeline();
+
+
 };
 
 var todoList = function ($scope) {
