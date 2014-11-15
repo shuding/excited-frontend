@@ -36,9 +36,14 @@
         type: "POST",
         url: this.action,
         data: dataJSON,
-        success: function(){},
         dataType: "json",
         contentType : "application/json"
+      }).done(function() {
+          if (data.errors) {
+              //TODO better error handling
+          } else {
+              location.assign('../');
+          }
       });
     };
   </script>
