@@ -37,7 +37,18 @@ var main = function ($scope) {
 };
 
 var timelineList = function ($scope) {
-    getTimeline($scope.lists);
+    var callback = function (data) {
+        console.log($scope);
+        var lists = [];
+        for (var i in data) {
+            lists.push(new timelineLi(data[i]));
+        }
+        console.log(lists);
+        $scope.lists = lists;
+        $scope.$apply();
+    };
+    getTimeline(callback);
+
     //$scope.classUlShow = "hide";
     window.location.hash = "new";
 
