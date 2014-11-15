@@ -39,6 +39,8 @@
   display: block;
   text-decoration: none;
   -webkit-tap-highlight-color:rgb(0,0,0,0);
+  -webkit-user-selected:none;
+  user-selected:none;
 }
 .g-inputnone{
   outline: none;
@@ -58,8 +60,8 @@
 }
 
 .g-tran{
-  -webkit-transition:all 0.4s ease-in;
-  transition:all 0.4s ease-in;
+  -webkit-transition:all 0.2s ease-in;
+  transition:all 0.2s ease-in;
 }
 
 
@@ -268,6 +270,12 @@ body,html{
         font-size:12px;
         margin-right: 16px;
         background-color: rgba(0,0,0,0.05);
+        .g-tran;
+
+        &:focus,&:active{
+          background-color: @white;
+          .g-tran;
+        }
 
       }/*.search-input*/
 
@@ -355,6 +363,13 @@ body,html{
         padding:17px;
         font-size: 14px;
         color: @white;
+        .g-tran;
+
+        &:focus,&:active{
+          background-color: darken(@grey8, 3%);
+          .g-tran;
+        }
+
       }/*.add-todo-input*/
 
       #todo-list-ul{
@@ -386,8 +401,9 @@ body,html{
             }/*.checked .todo-list-item-checkbox:before*/
 
             &.checked .todo-list-item-title,&.checked .todo-list-item-desc{
-              color: Darken(@white, 50%);
+              color: darken(@white, 50%);
               text-decoration: line-through;
+              .g-tran;
             }/*.todo-list-item-title*/
 
             .todo-list-item-checkbox{
@@ -400,6 +416,11 @@ body,html{
               margin-right: 16px;
               margin-top: 5px;
               .g-tran;
+
+              &:hover{
+                background-color: lighten(@grey7, 3%);
+                .g-tran;
+              }
 
             }/*.todo-list-item-checkbox*/
 
