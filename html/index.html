@@ -8,12 +8,14 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/excited.css">
   <link rel="stylesheet" href="css/excited-animation.css">
+  <script src="js/lib/jquery-2.1.1.min.js"></script>
   <script src="js/lib/angular.min.js"></script>
   <script src="js/app/excited-api.js"></script>
   <script src="js/app/excited-toolbar.js"></script>
   <script src="js/app/excited-timeline.js"></script>
   <script src="js/app/excited-todo.js"></script>
   <script src="js/app/excited-follow.js"></script>
+  <script src="js/app/excited-ul.js"></script>
 </head>
 <body ng-controller="main">
   <div id="main-container">
@@ -45,7 +47,7 @@
         </div>
         <div id="timeline">
           <ul id="timeline-list-ul" class="{{ classUlShow }}" ng-controller="timeline-list">
-            <li class="timeline-list-item {{ list.class }}" ng-repeat="list in lists">
+            <li id="{{ list.id }}" class="timeline-list-item {{ list.class }}" ng-repeat="list in lists">
               <div ng-if="list.class == 'timeline-list-item-li'">
                 <div class="timeline-list-info">
                   <img class='timeline-list-item-avator' ng-model="list.avatorSrc" src="{{ list.avatorSrc }}">

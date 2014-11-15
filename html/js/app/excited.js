@@ -6,8 +6,11 @@ var main = function ($scope) {
 
 var timelineList = function ($scope) {
     $scope.lists = getTimeline();
+    //$scope.classUlShow = "hide";
 
+    window.location.hash = "new";
 
+    timelineInit();
 };
 
 var todoList = function ($scope) {
