@@ -97,4 +97,15 @@ $(window).load(function () {
         }
     }).on("blur", function (event) {
     });
+
+    $("#overlay").click(function (event) {
+        if (event.target == this) {
+            $(this).animate({
+                opacity: 0
+            }, 500);
+            setTimeout(function () {
+                $("#overlay").css("display", "none");
+            }, 500);
+        }
+    });
 });
