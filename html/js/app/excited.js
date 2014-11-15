@@ -95,4 +95,4 @@ app.controller("main", main)
     .controller("timeline-list", timelineList)
     .controller("follow-list", followList);
 
-//checkLogin();
+checkLogin();
