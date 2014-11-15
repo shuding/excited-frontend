@@ -24,6 +24,9 @@ var timelineLi = function (data) {
         this.title = data.title;
         this.fullContent = data.content;
         this.content = getDesc( data.content );
+        this.itemId = data.id;
+        if (/http.+?\.(png|jpg|jpeg)/.test(this.fullContent))
+            this.image = this.fullContent.match(/http.+?\.(png|jpg|jpeg)/)[0];
     }
 };
 
