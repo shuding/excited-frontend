@@ -11,7 +11,7 @@
   <div id="container">
     <img id="logo" src="../static/logo.png">
     <h1>Login to Excited!</h1>
-    <form>
+    <form action="/api/login" method="post">
       <input name="email" type="email" placeholder="Email"><br/>
       <input name="password" type="password" placeholder="Password"><br/>
       <input type="submit" value="login">
@@ -20,7 +20,11 @@
     <p id="copyright">Copyright © ElderFrenzy 2014 • <a href="#">Terms of Use</a></p>
   </div>
   <script>
-
+    var form = document.getElementsByTagName("form")[0];
+    form.onsubmit = function (e) {
+      e.preventDefault();
+      console.log(this);
+    };
   </script>
 </body>
 </html>
