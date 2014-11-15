@@ -179,15 +179,15 @@ body,html{
 
     #logo{
       position: absolute;
-      width: 124px;
-      height: 32px;
-      top: 16px;
+      width: 164px;
+      height: 26px;
+      top: 20px;
       left:50%;
       margin: 0;
-      margin-left: -62px;
+      margin-left: -82px;
       background-image: url(../images/logo.svg);
       background-repeat: no-repeat;
-      background-size: 124px 32px;
+      background-size: 164px 26px;
     }/*#logo*/
 
     #userinfo{
@@ -424,12 +424,16 @@ body,html{
 
                   span{
                     font-size: 18px;
+                    font-family: 'icomoon';
                   }
 
                 }/*.timeline-mark-btn,.timeline-retweet-btn,.timeline-share-btn*/
 
                 .timeline-mark-btn{
                   float: left;
+                  span:before{
+                    content: '\e009';
+                  }
                 }/*.timeline-mark-btn*/
 
                 .timeline-retweet-btn,.timeline-share-btn{
