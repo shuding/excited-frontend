@@ -6,18 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title></title>
   <script src="js/lib/angular.min.js"></script>
-  <script src="js/app/excited.js"></script>
+  <script src="js/app/excited-timeline.js"></script>
+  <script src="js/app/excited-todo.js"></script>
+  <script src="js/app/excited-follow.js"></script>
 </head>
 <body ng-controller="main">
   <div id="main-container">
-    <div id="toolbar"></div>
+    <div id="toolbar">
+    </div>
     <div id="page">
       <div id="page-container">
-        <div id="todo-list"></div>
-        <div id="time-line"></div>
-        <div id="follow-list"></div>
+        <div id="todo-list">
+          <ul id="todo-list-ul" ng-controller="todo-list">
+            <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists">{{ list.html }}</li>
+          </ul>
+        </div>
+        <div id="timeline">
+          <ul id="timeline-list-ul" ng-controller="timeline-list">
+            <li class="timeline-list-item {{ list.class }}" ng-repeat="list in lists">{{ list.html }}</li>
+          </ul>
+        </div>
+        <div id="follow-list">
+          <ul id="follow-list-ul" ng-controller="follow-list">
+            <li class="follow-list-item {{ list.class }}" ng-repeat="list in lists">{{ list.html }}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+  <script src="js/app/excited.js"></script>
 </body>
 </html>
