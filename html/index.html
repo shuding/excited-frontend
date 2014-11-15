@@ -57,7 +57,7 @@
     <div id="page">
       <div id="page-container">
         <div id="todo-list" ng-controller="todo-list">
-          <input class="add-todo-input" type="text" ng-keyup="addNewTodo()" ng-model="newTodoText">
+          <input class="add-todo-input" placeholder="Add an item" type="text" ng-keyup="addNewTodo()" ng-model="newTodoText">
           <ul id="todo-list-ul">
             <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists">
               <a href="#" class="todo-list-item-checkbox"></a>

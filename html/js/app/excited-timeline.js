@@ -28,6 +28,9 @@ var timelineLi = function (data) {
     this.time = "2014-11-11 11:11:11";
     this.content = "EXCITED! This is a item demo " + listNumber;
     if (data) {
+        if ( data.meta.protocol == "rss" ) {
+            this.avatorSrc = "static/" + data.source + ".png";
+        }
         this.author = data.source;
         this.title = data.title;
         this.fullContent = data.content;
