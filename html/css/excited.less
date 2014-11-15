@@ -634,28 +634,102 @@ body,html{
   position: absolute;
   top: @toolbar-height;
   width: 100%;
-  height: 100%;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
 
-  &:after{
-    .g-clear;
-  }
-
   #details-container{
     .g-bbox;
     position: absolute;
     top: 0;
     left: 50%;
-    width: 588px;
-    margin-left: -294px;
-    background-color: @white;
+    width: 876px;
+    margin-left: -438px;
     bottom: 0;
     overflow-x: hidden;
     overflow-y: auto;
+
+    &:after{
+      .g-clear;
+    } 
+
+    #details-prev-btn{
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 144px;
+
+      &:hover{
+        background-color: rgba(255,255,255,0.05);
+      }
+
+      span{
+        width: 32px;
+        height: 32px;
+        .g-bbox;
+        padding: 4px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -16px;
+        margin-left: -16px;
+      }
+      span:before{
+        content: '\e604';
+        font-family: 'icomoon';
+        font-size: 24px;
+        color: @white;
+      }
+    }/*#details-prev-btn*/
+
+    #details-next-btn{
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 144px;
+
+      &:hover{
+        background-color: rgba(255,255,255,0.05);
+      }
+
+      span{
+        width: 32px;
+        height: 32px;
+        .g-bbox;
+        padding: 4px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -16px;
+        margin-left: -16px;
+      }
+      span:before{
+        content: '\e603';
+        font-family: 'icomoon';
+        font-size: 24px;
+        color: @white;
+      }
+    }/*#details-next-btn*/
+
+    #details-content{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 588px;
+      left: 50%;
+      margin-left: -294px;
+      .g-bbox;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: @white;
+
+    }/*#details-content*/
+
   }/*#details-container*/
 
 }/*#overlay*/
