@@ -16,7 +16,12 @@ var followList = function ($scope) {
     $scope.lists = getFollow();
 };
 
+var toolbar = function ($scope) {
+    $scope.userInfo = getUserInfo();
+};
+
 app.controller("main", main)
+    .controller("toolbar", toolbar)
     .controller("timeline-list", timelineList)
     .controller("todo-list", todoList)
     .controller("follow-list", followList);

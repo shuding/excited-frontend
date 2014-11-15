@@ -6,17 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title></title>
   <script src="js/lib/angular.min.js"></script>
+  <script src="js/app/excited-toolbar.js"></script>
   <script src="js/app/excited-timeline.js"></script>
   <script src="js/app/excited-todo.js"></script>
   <script src="js/app/excited-follow.js"></script>
 </head>
 <body ng-controller="main">
   <div id="main-container">
-    <div id="toolbar">
+    <div id="toolbar" ng-controller="toolbar">
+      <div id="navigation">
+        <a class="back-btn" href="#">BACK</a>
+      </div>
+      <h1 id="logo"></h1>
+      <div id="userinfo">
+        <input class="search-input" type="search">
+        <a class="user-avator" href="#" style="background-image: url({{ userInfo.avator }})"></a>
+      </div>
     </div>
     <div id="page">
       <div id="page-container">
         <div id="todo-list">
+          <input class="add-todo-input" type="text"><a class="add-todo-btn" href="#">Add</a>
           <ul id="todo-list-ul" ng-controller="todo-list">
             <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists">{{ list.html }}</li>
           </ul>
