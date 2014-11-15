@@ -83,7 +83,7 @@ $(window).load(function () {
                              "<a href='#' class='todo-list-item-checkbox'></a>" +
                              "<div class='todo-list-item-content'>" +
                              "<p class='todo-list-item-title'>" + this.value + "</p>" +
-                             "<span class='todo-list-item-desc'>" + nickname + "</span>" +
+                             "<span class='todo-list-item-desc'>" + nickname + " - " + moment(new Date()).fromNow() + "</span>" +
                              "</div></li>").prependTo("#todo-list-ul");
 
             setTimeout(function () {

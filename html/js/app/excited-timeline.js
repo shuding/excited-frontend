@@ -31,6 +31,7 @@ var timelineLi = function (data) {
         if ( data.meta.protocol == "rss" ) {
             this.avatorSrc = "static/" + data.source + ".png";
         }
+        this.time = moment(new Date(data.created_on)).fromNow();
         this.author = data.source;
         this.title = data.title;
         this.fullContent = data.content;
