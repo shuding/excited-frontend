@@ -11,11 +11,5 @@ var todolistLi = function (data) {
 
 var getTodolist = function () {
     return [
-        new todolistLi(),
-        new todolistLi(),
-        new todolistLi(),
-        new todolistLi(),
-        new todolistLi(),
-        new todolistLi()
     ];
 };

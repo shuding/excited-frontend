@@ -12,10 +12,9 @@ var timelineLi = function (data) {
     this.time = "2014-11-11 11:11:11";
     this.content = "EXCITED! This is a item demo " + listNumber;
     if (data) {
-        if (data.source)
-            this.author = data.source;
-        if (data.content)
-            this.content = data.content;
+        this.author = data.source;
+        this.content = "<strong>" + data.title + "</strong><br/>";
+        this.content += data.content;
     }
 };
 
