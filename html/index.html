@@ -80,7 +80,7 @@
                 <img class="timeline-list-item-image" src="{{ list.image }}" ng-if="list.image">
                 <div href="#" class='timeline-list-item-content'><strong ng-if="list.title">{{ list.title }} </strong>{{ list.content }}</div>
                 <div class="timeline-list-btns">
-                  <a href='#' class='timeline-mark-btn' ng-click="markItem(list.id)"><span></span></a>
+                  <a href='#' class='timeline-mark-btn' ng-click="markItem(list.id, list.itemId)"><span></span></a>
                   <a href='#' class='timeline-share-btn'><span></span></a>
                   <a href='#' class='timeline-retweet-btn'><span></span></a>
                 </div>

@@ -50,7 +50,8 @@ var timelineList = function ($scope) {
     //$scope.classUlShow = "hide";
     window.location.hash = "new";
 
-    $scope.markItem = function (id) {
+    $scope.markItem = function (id, itemId) {
+        markItemApi(itemId);
         markItemAnimation(id);
     };
 
