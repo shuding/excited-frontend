@@ -46,7 +46,7 @@
     <div id="toolbar" ng-controller="toolbar">
       <div id="toolbar-container">
         <div id="navigation">
-          <a class="back-btn" href="#"></a>
+          <a class="back-btn" href="#"><span></span></a>
         </div>
         <h1 id="logo"></h1>
         <div id="userinfo">
@@ -67,7 +67,7 @@
           <input id="add-new-todo-input" class="add-todo-input" placeholder="Add an item" type="text" ng-model="newTodoText">
           <ul id="todo-list-ul">
             <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists | filter: { finished: false }">
-              <a href="#" class="todo-list-item-checkbox"></a>
+              <a href="#" class="todo-list-item-checkbox" ng-click="checkItem( list.id )"></a>
               <div class="todo-list-item-content">
                 <p class="todo-list-item-title">{{ list.title }}</p>
                 <span class="todo-list-item-desc">{{ list.desc }}</span>

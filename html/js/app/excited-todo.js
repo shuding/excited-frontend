@@ -6,6 +6,7 @@ var todolistLi = function (data) {
     this.title = data.item.title;
     this.desc = data.item.source + " - " + moment(new Date(data.created_on)).fromNow();
     this.finished = data.finished;
+    this.id = data.id;
 };
 
 // functions

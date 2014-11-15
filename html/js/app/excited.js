@@ -75,6 +75,12 @@ var todoList = function ($scope) {
         $scope.$apply();
     };
     getTodolist(callback);
+
+    $scope.checkItem = function (id) {
+        finishItem(id, function () {
+            
+        });
+    };
 };
 
 var followList = function ($scope) {
