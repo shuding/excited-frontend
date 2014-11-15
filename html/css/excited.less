@@ -192,7 +192,7 @@ body,html{
 
     #userinfo{
       position: absolute;
-      width: 300px;
+      width: 198px;
       height: 32px;
       top: 16px;
       right:16px;
@@ -210,26 +210,31 @@ body,html{
         height: 32px;
         width: 150px;
         padding: 10px;
+        padding-left: 40px;
         font-size:12px;
         margin-right: 16px;
-        background-color: rgba(0,0,0,0.1);
-        padding-left: 42px;
-
-        &:before{
-          content: '\e036';
-          font-size: 12px;
-          color: @white;
-          width: 32px;
-          height: 32px;
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 99999;
-          font-family:'icomoon'; 
-        }
+        background-color: rgba(0,0,0,0.05);
 
       }/*.search-input*/
+
+      .search-btn{
+        .g-bbox;
+        position: absolute;
+        left: 4px;
+        width: 32px;
+        height: 32px;
+        padding: 7px;
+
+        &:before{
+          content:'\e036';
+          width: 32px;
+          height: 32px;
+          color: @grey1;
+          font-size: 18px;
+          font-family: 'icomoon';
+        }
+
+      }/*.search-btn*/
 
       .user-avator{
         .g-abtn;
@@ -327,7 +332,7 @@ body,html{
                 padding: 0;
                 color: @white;
                 font-size: 14px;
-                margin-bottom: 4px;
+                margin-bottom: 2px;
 
                 strong{
                   font-weight: normal;
@@ -451,6 +456,7 @@ body,html{
                 }/*.timeline-mark-btn,.timeline-retweet-btn,.timeline-share-btn*/
 
                 .timeline-mark-btn{
+                  margin-left: 8px;
                   float: left;
                   span:before{
                     content: '\e009';
@@ -459,9 +465,13 @@ body,html{
 
                 .timeline-retweet-btn{
                   float: right;
+                  span:before{
+                    content:'\e039';
+                  }
                 }/*.timeline-retweet-btn*/
 
                 .timeline-share-btn{
+                  margin-right: 8px;
                   float: right;
                   span:before{
                     content: '\e081';
