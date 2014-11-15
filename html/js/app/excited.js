@@ -1,5 +1,5 @@
 // TODO : debug
-var domain = "http://172.27.221.110"
+var domain = "";//http://172.27.221.110"
 // TODO : end debug
 
 var app = angular.module("excited", []);
