@@ -2,6 +2,14 @@
 
 var listNumber = 0;
 
+var getDesc = function (fullContent) {
+    var containerDiv = $("<div></div>").html(fullContent);
+    containerDiv = containerDiv.text();
+    if (containerDiv.length > 200)
+        containerDiv = containerDiv.substr(0, 200) + "...";
+    return containerDiv;
+};
+
 var timelineLi = function (data) {
     // TODO
     listNumber++;
@@ -14,7 +22,8 @@ var timelineLi = function (data) {
     if (data) {
         this.author = data.source;
         this.title = data.title;
-        this.content = data.content;
+        this.fullContent = data.content;
+        this.content = getDesc( data.content );
     }
 };
 
