@@ -15,6 +15,14 @@ var timelineList = function ($scope) {
 
 var todoList = function ($scope) {
     $scope.lists = getTodolist();
+
+    $scope.addNewTodo = function () {
+        if(event.keyCode == 13 && $scope.newTodoText){
+            $scope.lists.splice(
+                0, 0, new todolistLi($scope.newTodoText)
+            );
+        }
+    }
 };
 
 var followList = function ($scope) {

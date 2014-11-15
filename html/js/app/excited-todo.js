@@ -4,7 +4,7 @@ var todolistLi = function (data) {
     // TODO
     this.class = "todolist-item-li";
     this.title = "Aha";
-    this.desc = "EXCITED! This is a todo demo.";
+    this.desc = data || "EXCITED! This is a todo demo.";
 };
 
 // functions

@@ -1,3 +1,3 @@
 var timelineInit = function () {
-    console.log($(".timeline-list-item-new-li"));
+    //console.log($(".timeline-list-item-new-li"));
 };
