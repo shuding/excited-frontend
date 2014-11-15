@@ -1,5 +1,5 @@
 // TODO : debug
-var domain = "";//http://172.27.221.110"
+var domain = "";//http://172.27.221.110";
 // TODO : end debug
 
 var app = angular.module("excited", []);
@@ -37,7 +37,7 @@ var main = function ($scope) {
 };
 
 var timelineList = function ($scope) {
-    $scope.lists = getTimeline();
+    getTimeline($scope.lists);
     //$scope.classUlShow = "hide";
     window.location.hash = "new";
 

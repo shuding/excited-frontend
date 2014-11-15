@@ -11,6 +11,12 @@ var timelineLi = function (data) {
     this.author = "illusate";
     this.time = "2014-11-11 11:11:11";
     this.content = "EXCITED! This is a item demo " + listNumber;
+    if (data) {
+        if (data.source)
+            this.author = data.source;
+        if (data.content)
+            this.content = data.content;
+    }
 };
 
 var timelineNewItemLi = function (num) {
@@ -24,7 +30,16 @@ var timelineNewItemLi = function (num) {
 
 // functions
 
-var getTimeline = function () {
+var getTimeline = function ($scopeLists) {
+    getPublicItems(null, function (data) {
+        //$scopeLists
+        var lists = [];
+        for (var i in data) {
+            lists.push(new timelineLi(data[i]));
+        }
+        $scopeLists = lists;
+    });
+    /*
     return [
         new timelineLi(),
         new timelineLi(),
@@ -34,5 +49,5 @@ var getTimeline = function () {
         new timelineLi(),
         new timelineLi(),
         new timelineLi()
-    ];
+    ];*/
 };
