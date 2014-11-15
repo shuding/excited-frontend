@@ -56,6 +56,10 @@
   text-overflow: ellipsis;
 }
 
+.g-tran{
+
+}
+
 
 /**************************/
 /*                        */
@@ -367,7 +371,6 @@ body,html{
       width: 588px;
       height: 100%;
       float: left;
-      background-color: @grey9;
       padding: 16px;
         #timeline-list-ul{
           .g-listnone;
@@ -421,6 +424,7 @@ body,html{
             .timeline-list-item-image{
               width: 100%;
               margin-bottom: 16px;
+              cursor: pointer;
               img{
                 width: 100%;
                 height: auto;
@@ -441,9 +445,11 @@ body,html{
                 padding-right: 24px;
                 padding-bottom: 8px;
                 cursor: pointer;
+                .g-tran;
 
                 &:hover{
                   background-color: @grey6;
+                  .g-tran;
                 }
                 strong{
                   display: block;
@@ -616,5 +622,40 @@ body,html{
 
   }/*#page-container*/
 
-
 }/*page*/
+
+/**************************/
+/*                        */
+/*        overlay         */
+/*                        */
+/**************************/
+#overlay {
+  // display: none;
+  position: absolute;
+  top: @toolbar-height;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+
+  &:after{
+    .g-clear;
+  }
+
+  #details-container{
+    .g-bbox;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 588px;
+    margin-left: -294px;
+    background-color: @white;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }/*#details-container*/
+
+}/*#overlay*/
