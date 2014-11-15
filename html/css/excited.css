@@ -43,6 +43,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\0000360}}
+.g-tran {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
 /**************************/
 /*                        */
 /*          icon          */
@@ -54,7 +59,7 @@
   font-weight: normal;
   font-style: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\0000381}}
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: 'icomoon';
@@ -68,47 +73,47 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\0000395}}
 .icon-ribbon:before {
   content: "\e009";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\0000398}}
 .icon-search:before {
   content: "\e036";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003101}}
 .icon-repeat:before {
   content: "\e058";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003104}}
 .icon-reload:before {
   content: "\e080";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003107}}
 .icon-share:before {
   content: "\e081";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003110}}
 .icon-arrow-left:before {
   content: "\e094";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003113}}
 .icon-trash:before {
   content: "\e109";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003116}}
 .icon-plus:before {
   content: "\e114";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003119}}
 .icon-check:before {
   content: "\e116";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003122}}
 .icon-cross:before {
   content: "\e117";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003125}}
 .icon-ellipsis:before {
   content: "\e129";
 }
@@ -117,7 +122,7 @@
 /*          body          */
 /*                        */
 /**************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003135}}
 body,
 html {
   width: 100%;
@@ -125,7 +130,7 @@ html {
   background-color: #414141;
   font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003142}}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -134,7 +139,7 @@ html {
 /*         toolbar        */
 /*                        */
 /**************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003151}}
 #toolbar {
   z-index: 9999;
   width: 100%;
@@ -145,7 +150,7 @@ html {
   background-color: #ffe43c;
   /*#toobar-container*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003160}}
 #toolbar #toolbar-container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -160,7 +165,7 @@ html {
   /*#details-btns*/
   /*#userinfo*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003168}}
 #toolbar #toolbar-container #navigation {
   position: absolute;
   width: 32px;
@@ -169,7 +174,7 @@ html {
   left: 16px;
   /*a.back-btn*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003175}}
 #toolbar #toolbar-container #navigation a.back-btn {
   display: block;
   text-decoration: none;
@@ -180,7 +185,7 @@ html {
   font-size: 20px;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003186}}
 #toolbar #toolbar-container #logo {
   position: absolute;
   width: 164px;
@@ -194,7 +199,7 @@ html {
   -webkit-background-size: 164px 26px;
   background-size: 164px 26px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003199}}
 #toolbar #toolbar-container #details-btns {
   position: absolute;
   width: 144px;
@@ -206,13 +211,13 @@ html {
   /*details-retweet-btn*/
   /*.details-mark-btn*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003206}}
 #toolbar #toolbar-container #details-btns:after {
   content: '';
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003210}}
 #toolbar #toolbar-container #details-btns a {
   display: block;
   text-decoration: none;
@@ -227,29 +232,29 @@ html {
   margin-left: 16px;
   /*span*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003219}}
 #toolbar #toolbar-container #details-btns a span:before {
   font-size: 20px;
   color: #414141;
   font-family: 'icomoon';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003226}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003227}}
 #toolbar #toolbar-container #details-btns .details-share-btn span:before {
   content: '\e081';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003232}}
 #toolbar #toolbar-container #details-btns .details-retweet-btn {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003234}}
 #toolbar #toolbar-container #details-btns .details-retweet-btn span:before {
   content: '\e039';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003240}}
 #toolbar #toolbar-container #details-btns .details-mark-btn span:before {
   content: '\e009';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003247}}
 #toolbar #toolbar-container #userinfo {
   position: absolute;
   width: 198px;
@@ -260,13 +265,13 @@ html {
   /*.search-btn*/
   /*.user-avator*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003253}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003254}}
 #toolbar #toolbar-container #userinfo:after {
   content: '';
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003257}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003258}}
 #toolbar #toolbar-container #userinfo .search-input {
   position: relative;
   outline: none;
@@ -284,7 +289,7 @@ html {
   margin-right: 16px;
   background-color: rgba(0, 0, 0, 0.05);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003274}}
 #toolbar #toolbar-container #userinfo .search-btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -295,7 +300,7 @@ html {
   height: 32px;
   padding: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003282}}
 #toolbar #toolbar-container #userinfo .search-btn:before {
   content: '\e036';
   width: 32px;
@@ -304,7 +309,7 @@ html {
   font-size: 18px;
   font-family: 'icomoon';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003293}}
 #toolbar #toolbar-container #userinfo .user-avator {
   display: block;
   text-decoration: none;
@@ -324,7 +329,7 @@ html {
 /*          page          */
 /*                        */
 /**************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003316}}
 #page {
   position: fixed;
   background-color: #414141;
@@ -334,7 +339,7 @@ html {
   right: 0;
   /*#page-container*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003324}}
 #page #page-container {
   position: relative;
   width: 1200px;
@@ -359,7 +364,7 @@ html {
   /**************************/
   /*#follow-list*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003335}}
 #page #page-container #todo-list {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -375,7 +380,7 @@ html {
   /*.add-todo-input*/
   /*#todo-list-ul*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003346}}
 #page #page-container #todo-list .add-todo-input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -387,18 +392,19 @@ html {
   background-color: #353535;
   border-radius: 4px;
   margin-bottom: 16px;
+  margin-top: 16px;
   padding: 17px;
   font-size: 14px;
   color: #ffffff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003360}}
 #page #page-container #todo-list #todo-list-ul {
   list-style: none;
   padding: 0;
   margin: 0;
   /*.todo-list-item*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003363}}
 #page #page-container #todo-list #todo-list-ul .todo-list-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -409,11 +415,42 @@ html {
   border-radius: 4px;
   background-color: #505050;
   margin-bottom: 16px;
+  /*.checked .todo-list-item-checkbox:before*/
+  /*.todo-list-item-title*/
   /*.todo-list-item-checkbox*/
   /*.todo-list-item-content*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003372}}
+#page #page-container #todo-list #todo-list-ul .todo-list-item.checked .todo-list-item-checkbox:before {
+  text-decoration: none;
+  -webkit-tap-highlight-color: #000000;
+  content: '\e116';
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2px;
+  font-family: 'icomoon';
+  font-size: 20px;
+  color: #414141;
+  background-color: #ffe43c;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003388}}
+#page #page-container #todo-list #todo-list-ul .todo-list-item.checked .todo-list-item-title,
+#page #page-container #todo-list #todo-list-ul .todo-list-item.checked .todo-list-item-desc {
+  color: #808080;
+  text-decoration: line-through;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003393}}
 #page #page-container #todo-list #todo-list-ul .todo-list-item .todo-list-item-checkbox {
+  display: block;
+  text-decoration: none;
+  -webkit-tap-highlight-color: #000000;
   float: left;
   width: 24px;
   height: 24px;
@@ -421,15 +458,17 @@ html {
   border-radius: 4px;
   margin-right: 16px;
   margin-top: 5px;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003406}}
 #page #page-container #todo-list #todo-list-ul .todo-list-item .todo-list-item-content {
   float: left;
   width: 180px;
   /*.todo-list-item-title*/
   /*.todo-list-item-desc*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003409}}
 #page #page-container #todo-list #todo-list-ul .todo-list-item .todo-list-item-content .todo-list-item-title {
   white-space: nowrap;
   overflow: hidden;
@@ -440,11 +479,11 @@ html {
   font-size: 14px;
   margin-bottom: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003417}}
 #page #page-container #todo-list #todo-list-ul .todo-list-item .todo-list-item-content .todo-list-item-title strong {
   font-weight: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003421}}
 #page #page-container #todo-list #todo-list-ul .todo-list-item .todo-list-item-content .todo-list-item-desc {
   white-space: nowrap;
   overflow: hidden;
@@ -453,7 +492,7 @@ html {
   color: #969696;
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003413}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003440}}
 #page #page-container #timeline {
   position: absolute;
   overflow-x: hidden;
@@ -467,7 +506,7 @@ html {
   padding: 16px;
   /*#timeline-list-ul*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003424}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003451}}
 #page #page-container #timeline #timeline-list-ul {
   list-style: none;
   padding: 0;
@@ -476,7 +515,11 @@ html {
   padding-bottom: 100%;
   /*.timeline-list-item*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003456}}
+#page #page-container #timeline #timeline-list-ul:first-child {
+  margin-top: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003460}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -492,7 +535,7 @@ html {
   /*.timeline-list-item-content*/
   /*timeline-list-btns*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003438}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003469}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-info {
   width: 100%;
   height: 52px;
@@ -501,7 +544,7 @@ html {
   /*.timeline-list-item-author*/
   /*.timeline-list-item-time*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003443}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003474}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-info .timeline-list-item-avator {
   position: absolute;
   top: 16px;
@@ -510,7 +553,7 @@ html {
   height: 36px;
   border-radius: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003452}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003483}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-info .timeline-list-item-author {
   white-space: nowrap;
   overflow: hidden;
@@ -525,7 +568,7 @@ html {
   left: 68px;
   right: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003463}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003494}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-info .timeline-list-item-time {
   white-space: nowrap;
   overflow: hidden;
@@ -536,18 +579,18 @@ html {
   left: 68px;
   color: #d2d2d2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003473}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003504}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-item-image {
   width: 100%;
   margin-bottom: 16px;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003477}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003508}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-item-image img {
   width: 100%;
   height: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003484}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003515}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-item-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -563,17 +606,21 @@ html {
   padding-right: 24px;
   padding-bottom: 8px;
   cursor: pointer;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003499}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003530}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-item-content:hover {
   background-color: #f8f8f8;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003503}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003534}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-item-content strong {
   display: block;
   margin-bottom: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003509}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003540}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns {
   height: 48px;
   width: 100%;
@@ -585,13 +632,13 @@ html {
   /*.timeline-retweet-btn*/
   /*.timeline-retweet-btn*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003516}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003547}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns:after {
   content: '';
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003520}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003551}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-mark-btn,
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-retweet-btn,
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-share-btn {
@@ -606,41 +653,41 @@ html {
   color: #969696;
   padding: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003528}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003559}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-mark-btn span,
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-retweet-btn span,
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-share-btn span {
   font-size: 18px;
   font-family: 'icomoon';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003535}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003566}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-mark-btn {
   margin-right: 8px;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003538}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003569}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-mark-btn span:before {
   content: '\e009';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003543}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003574}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-retweet-btn {
   display: none;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003546}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003577}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-retweet-btn span:before {
   content: '\e039';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003551}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003582}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-share-btn {
   margin-left: 8px;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003554}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003585}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item .timeline-list-btns .timeline-share-btn span:before {
   content: '\e081';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003563}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003594}}
 #page #page-container #timeline #timeline-list-ul .timeline-list-item-new-li {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -650,7 +697,7 @@ html {
   color: #969696;
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003610}}
 #page #page-container #follow-list {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -666,14 +713,18 @@ html {
   padding: 16px;
   /*follow-list-ul*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003591}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003622}}
 #page #page-container #follow-list #follow-list-ul {
   list-style: none;
   padding: 0;
   margin: 0;
   /*follow-list-item*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003594}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003625}}
+#page #page-container #follow-list #follow-list-ul:first-child {
+  margin-top: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003629}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -688,13 +739,13 @@ html {
   /*.follow-list-info*/
   /*.follow-list-add-btn*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003603}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003638}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item:after {
   content: '';
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003607}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003642}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-avator-a {
   display: block;
   text-decoration: none;
@@ -706,12 +757,12 @@ html {
   border-radius: 50%;
   margin-right: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003616}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003651}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-avator-a img {
   width: 36px;
   height: 36px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003623}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003658}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-info {
   float: left;
   color: #ffffff;
@@ -719,7 +770,7 @@ html {
   /*.follow-list-name*/
   /*.follow-list-desc*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003628}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003663}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-info .follow-list-name {
   white-space: nowrap;
   overflow: hidden;
@@ -730,7 +781,7 @@ html {
   color: #ffffff;
   margin-top: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003637}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003672}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-info .follow-list-desc {
   white-space: nowrap;
   overflow: hidden;
@@ -740,7 +791,7 @@ html {
   font-size: 12px;
   color: #969696;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003647}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003682}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-add-btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -755,7 +806,7 @@ html {
   height: 28px;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003659}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003694}}
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-add-btn span:before {
   content: '\e114';
   font-family: 'icomoon';
@@ -768,7 +819,7 @@ html {
 /*        overlay         */
 /*                        */
 /**************************/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003682}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003717}}
 #overlay {
   display: none;
   position: absolute;
@@ -781,7 +832,7 @@ html {
   z-index: 1000;
   /*#details-container*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003693}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003728}}
 #overlay #details-container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -798,13 +849,13 @@ html {
   /*#details-next-btn*/
   /*#details-content*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003704}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003739}}
 #overlay #details-container:after {
   content: '';
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003708}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003743}}
 #overlay #details-container #details-prev-btn {
   cursor: pointer;
   position: absolute;
@@ -812,11 +863,11 @@ html {
   bottom: 0;
   width: 144px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003715}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003750}}
 #overlay #details-container #details-prev-btn:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003719}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003754}}
 #overlay #details-container #details-prev-btn span {
   width: 32px;
   height: 32px;
@@ -830,14 +881,14 @@ html {
   margin-top: -16px;
   margin-left: -16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003730}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003765}}
 #overlay #details-container #details-prev-btn span:before {
   content: '\e604';
   font-family: 'icomoon';
   font-size: 24px;
   color: #ffffff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003738}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003773}}
 #overlay #details-container #details-next-btn {
   cursor: pointer;
   position: absolute;
@@ -846,11 +897,11 @@ html {
   right: 0;
   width: 144px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003746}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003781}}
 #overlay #details-container #details-next-btn:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003750}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003785}}
 #overlay #details-container #details-next-btn span {
   width: 32px;
   height: 32px;
@@ -864,14 +915,14 @@ html {
   margin-top: -16px;
   margin-left: -16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003761}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003796}}
 #overlay #details-container #details-next-btn span:before {
   content: '\e603';
   font-family: 'icomoon';
   font-size: 24px;
   color: #ffffff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003769}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003804}}
 #overlay #details-container #details-content {
   position: absolute;
   top: 0;
@@ -889,7 +940,7 @@ html {
   /*#details-info*/
   /*#details-main*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003781}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003816}}
 #overlay #details-container #details-content #details-title {
   margin-left: 24px;
   padding-right: 24px;
@@ -898,7 +949,7 @@ html {
   margin-top: 36px;
   color: #414141;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003790}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003825}}
 #overlay #details-container #details-content #details-info {
   padding-left: 24px;
   padding-right: 24px;
@@ -907,13 +958,13 @@ html {
   /*#detials-source*/
   /*#detials-time*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003795}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003830}}
 #overlay #details-container #details-content #details-info:after {
   content: '';
   display: block;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003799}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003834}}
 #overlay #details-container #details-content #details-info .details-avator {
   float: left;
   display: block;
@@ -927,12 +978,12 @@ html {
   margin-top: -1px;
   background-color: #d2d2d2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003809}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003844}}
 #overlay #details-container #details-content #details-info .details-avator img {
   width: 16px;
   height: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003815}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003850}}
 #overlay #details-container #details-content #details-info #detials-source {
   float: left;
   font-size: 12px;
@@ -940,13 +991,13 @@ html {
   cursor: pointer;
   margin-right: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003824}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003859}}
 #overlay #details-container #details-content #details-info #detials-time {
   float: left;
   color: #d2d2d2;
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003833}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003868}}
 #overlay #details-container #details-content #details-main p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -959,7 +1010,7 @@ html {
   line-height: 1.8em;
   word-wrap: break-word;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003843}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003878}}
 #overlay #details-container #details-content #details-main img {
   width: 100%;
   height: auto;

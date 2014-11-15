@@ -58,7 +58,8 @@
 }
 
 .g-tran{
-
+  -webkit-transition:all 0.4s ease-in;
+  transition:all 0.4s ease-in;
 }
 
 
@@ -350,6 +351,7 @@ body,html{
         background-color: @grey8;
         border-radius: @card-border-radius;
         margin-bottom: 16px;
+        margin-top: 16px;
         padding:17px;
         font-size: 14px;
         color: @white;
@@ -367,7 +369,29 @@ body,html{
             background-color: @grey2;
             margin-bottom: 16px;
 
+            &.checked .todo-list-item-checkbox:before{
+              .g-abtn;
+              content: '\e116';
+              display: block;
+              .g-bbox;
+              padding: 2px;
+              font-family: 'icomoon';
+              font-size: 20px;
+              color:@grey1;
+              background-color: @yellow;
+              border-radius: 4px;
+              width: 24px;
+              height: 24px;
+              .g-tran;
+            }/*.checked .todo-list-item-checkbox:before*/
+
+            &.checked .todo-list-item-title,&.checked .todo-list-item-desc{
+              color: Darken(@white, 50%);
+              text-decoration: line-through;
+            }/*.todo-list-item-title*/
+
             .todo-list-item-checkbox{
+              .g-abtn;
               float: left;
               width: 24px;
               height: 24px;
@@ -375,7 +399,10 @@ body,html{
               border-radius: @card-border-radius;
               margin-right: 16px;
               margin-top: 5px;
+              .g-tran;
+
             }/*.todo-list-item-checkbox*/
+
             .todo-list-item-content{
               float: left;
               width: 180px;
@@ -425,6 +452,10 @@ body,html{
           .g-listnone;
           position: relative;
           padding-bottom: 100%;
+
+          &:first-child{
+            margin-top: 16px;
+          }
 
           .timeline-list-item{
             position: relative;
@@ -590,6 +621,10 @@ body,html{
 
       #follow-list-ul{
         .g-listnone;
+
+        &:first-child{
+          margin-top: 16px;
+        }
 
         .follow-list-item{
           .g-bbox;
