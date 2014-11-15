@@ -10,6 +10,14 @@ var getDesc = function (fullContent) {
     return containerDiv;
 };
 
+var getImage = function (fullContent) {
+    var containerDiv = $("<div></div>").html(fullContent);
+    var img = containerDiv.find("img");
+    if (img.length)
+        return img[0].src;
+    return null;
+};
+
 var timelineLi = function (data) {
     // TODO
     listNumber++;
@@ -25,8 +33,7 @@ var timelineLi = function (data) {
         this.fullContent = data.content;
         this.content = getDesc( data.content );
         this.itemId = data.id;
-        if (/http.+?\.(png|jpg|jpeg)/.test(this.fullContent))
-            this.image = this.fullContent.match(/http.+?\.(png|jpg|jpeg)/)[0];
+        this.image = getImage( data.content );
     }
 };
 
