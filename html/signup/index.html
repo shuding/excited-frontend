@@ -39,7 +39,7 @@
         dataType: "json",
         contentType : "application/json"
       }).done(function() {
-          if (data.errors) {
+          if (data.errors.length) {
               //TODO better error handling
           } else {
               location.assign('../');
