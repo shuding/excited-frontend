@@ -226,6 +226,7 @@ body,html{
           .g-listnone;
 
           .timeline-list-item{
+            position: relative;
             .g-bbox;
             padding: 16px;
             width: 100%;
@@ -233,6 +234,36 @@ body,html{
             background-color: rgb(255,255,255);
             border-radius: @card-border-radius;
             margin-bottom: 16px;
+
+            .timeline-list-item-avator{
+              position: absolute;
+              top: 16px;
+              left: 16px;
+              width: 36px;
+              height: 36px;
+              border-radius: 50%;
+            }/*.timeline-list-item-avator*/
+
+            .timeline-list-item-author{
+              position: absolute;
+              font-size: 12px;
+              top: 16px;
+              left: 68px;
+              right: 16px;
+            }/*.timeline-list-item-author*/
+
+            .timeline-list-item-time{
+              position: absolute;
+              font-size: 12px;
+              top: 32px;
+              left: 68px;
+            }/*.timeline-list-item-time*/
+
+            .timeline-list-item-content{
+              position: absolute;
+              top: 68px;
+            }/*.timeline-list-item-content*/
+
           }/*.timeline-list-item*/
 
         }/*#timeline-list-ul*/
