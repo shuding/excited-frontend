@@ -3,6 +3,7 @@ var domain = "";//http://172.27.221.110";
 // TODO : end debug
 
 var app = angular.module("excited", []);
+var todoListItems = [];
 
 var redirectLogin = function () {
     $("#overlay").css("display", "inherit");
@@ -40,7 +41,8 @@ var timelineList = function ($scope) {
     var callback = function (data) {
         var lists = [];
         for (var i in data) {
-            lists.push(new timelineLi(data[i]));
+            if (todoListItems.indexOf( data[i].id ) == -1)
+                lists.push(new timelineLi(data[i]));
         }
         $scope.lists = lists;
         $scope.$apply();
@@ -62,7 +64,8 @@ var todoList = function ($scope) {
     var callback = function (data) {
         var lists = [];
         for (var i in data) {
-            lists.splice(0, 0, new todolistLi(data[i]))
+            lists.splice(0, 0, new todolistLi(data[i]));
+            todoListItems.push(data[i].item.id);
         }
         $scope.lists = lists;
         $scope.$apply();
