@@ -372,7 +372,7 @@ body,html{
 
       }/*.add-todo-input*/
 
-      #todo-list-ul{
+      #todo-list-ul,.todo-list-finished-items{
         .g-listnone;
 
         .todo-list-item{
@@ -401,7 +401,7 @@ body,html{
             }/*.checked .todo-list-item-checkbox:before*/
 
             &.checked .todo-list-item-title,&.checked .todo-list-item-desc{
-              color: darken(@white, 50%);
+              color: @grey2 !important;
               text-decoration: line-through;
               .g-tran;
             }/*.todo-list-item-title*/
@@ -449,6 +449,59 @@ body,html{
             }/*.todo-list-item-content*/
         }/*.todo-list-item*/
       }/*#todo-list-ul*/
+
+      .todo-list-show-finished{
+        .g-bbox;
+        -webkit-user-selected:none;
+        cursor: pointer;
+        user-selected:none;
+        margin-top: 24px;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        padding: 16px;
+        color:@grey3;
+        background-color: @grey8;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        .g-abtn;
+        .g-tran;
+
+        &:hover{
+          .g-abtn;
+          .g-tran;
+          background-color: darken(@grey8, 5%);
+        }
+      }/*.todo-list-show-finished*/
+
+      .todo-list-finished-items{
+        -webkit-filter:brightness(0.7);
+        filter:brightness(0.7);
+
+        .todo-list-item-desc,.todo-list-item-title{
+          text-decoration: line-through;
+          .g-tran;
+        } /*.todo-list-item-desc,.todo-list-item-title*/
+
+        .todo-list-item-checkbox:before{
+          .g-abtn;
+          content: '\e116';
+          display: block;
+          .g-bbox;
+          padding: 2px;
+          font-family: 'icomoon';
+          font-size: 20px;
+          color:@grey1;
+          background-color: @yellow;
+          border-radius: 4px;
+          width: 24px;
+          height: 24px;
+          .g-tran;
+        }
+
+      }/*.todo-list-finished-items*/
+
 
     }/*#todo-list*/
 
