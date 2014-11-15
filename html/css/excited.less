@@ -8,6 +8,11 @@
 @page-width:1200px;
 @card-border-radius:4px;
 
+@grey1:rgb(92,92,92);
+@grey2:rgb(74,74,74);
+@grey3:rgb(120,120,120);
+@white:rgb(255,255,255);
+
 /**************************/
 /*                        */
 /*          mixin         */
@@ -235,33 +240,41 @@ body,html{
             border-radius: @card-border-radius;
             margin-bottom: 16px;
 
-            .timeline-list-item-avator{
-              position: absolute;
-              top: 16px;
-              left: 16px;
-              width: 36px;
+            .timeline-list-info{
+              width: 100%;
               height: 36px;
-              border-radius: 50%;
-            }/*.timeline-list-item-avator*/
+              margin-bottom: 16px;
 
-            .timeline-list-item-author{
-              position: absolute;
-              font-size: 12px;
-              top: 16px;
-              left: 68px;
-              right: 16px;
-            }/*.timeline-list-item-author*/
+              .timeline-list-item-avator{
+                position: absolute;
+                top: 16px;
+                left: 16px;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+              }/*.timeline-list-item-avator*/
 
-            .timeline-list-item-time{
-              position: absolute;
-              font-size: 12px;
-              top: 32px;
-              left: 68px;
-            }/*.timeline-list-item-time*/
+              .timeline-list-item-author{
+                position: absolute;
+                .g-abtn;
+                color:rgb(74,74,74);
+                font-size: 14px;
+                top: 16px;
+                left: 68px;
+                right: 16px;
+              }/*.timeline-list-item-author*/
+
+              .timeline-list-item-time{
+                position: absolute;
+                font-size: 12px;
+                top: 34px;
+                left: 68px;
+                color:@grey3;
+              }/*.timeline-list-item-time*/
+            }/*.timeline-list-info*/
 
             .timeline-list-item-content{
-              position: absolute;
-              top: 68px;
+                
             }/*.timeline-list-item-content*/
 
           }/*.timeline-list-item*/
