@@ -202,6 +202,7 @@ body,html{
       }
       
       .search-input{
+        position: relative;
         .g-inputnone;
         .g-bbox;
         float: right;
@@ -212,6 +213,22 @@ body,html{
         font-size:12px;
         margin-right: 16px;
         background-color: rgba(0,0,0,0.1);
+        padding-left: 42px;
+
+        &:before{
+          content: '\e036';
+          font-size: 12px;
+          color: @white;
+          width: 32px;
+          height: 32px;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 99999;
+          font-family:'icomoon'; 
+        }
+
       }/*.search-input*/
 
       .user-avator{
@@ -311,6 +328,10 @@ body,html{
                 color: @white;
                 font-size: 14px;
                 margin-bottom: 4px;
+
+                strong{
+                  font-weight: normal;
+                }
               }/*.todo-list-item-title*/
               .todo-list-item-desc{
                 .g-ell;
