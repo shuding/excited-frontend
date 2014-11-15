@@ -48,6 +48,19 @@
   overflow: hidden;
 }
 
+.new-item-animation {
+  -webkit-transform: rotateZ(10deg);
+  -moz-transform: rotateZ(10deg);
+  -ms-transform: rotateZ(10deg);
+  -o-transform: rotateZ(10deg);
+  transform: rotateZ(10deg);
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -ms-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
 @-webkit-keyframes timeline-placeholder-animation {
   100% {
     height: 0;

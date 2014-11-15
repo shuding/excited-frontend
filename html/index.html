@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/excited.css">
   <link rel="stylesheet" href="css/excited-animation.css">
-  <link rel="stylesheet" href="css/excoted-extra.css">
+  <link rel="stylesheet" href="css/excited-extra.css">
   <script src="js/lib/jquery-2.1.1.min.js"></script>
   <script src="js/lib/angular.min.js"></script>
   <script src="js/app/excited-api.js"></script>
@@ -21,6 +21,10 @@
 <body ng-controller="main">
   <div id="main-container">
     <div id="overlay">
+      <div id="warning">
+        <h3>Please login.</h3>
+        <p>Redirecting to login page in <span id="second"></span>s.</p>
+      </div>
       <div id="details-container">
         <div id="details-prev-btn"><span></span></div>
         <div id="details-content">
@@ -36,10 +40,6 @@
           </div>
         </div>
         <div id="details-next-btn"><span></span></div>
-      </div>
-      <div id="warning">
-        <h3>Please login.</h3>
-        <p>Redirecting to login page in <span id="second"></span>s.</p>
       </div>
     </div>
     <div id="toolbar" ng-controller="toolbar">

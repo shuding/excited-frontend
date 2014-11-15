@@ -78,7 +78,22 @@ $(window).load(function () {
     
     $("#add-new-todo-input").on("keyup", function (event) {
         if(event.keyCode == 13 && this.value){
-            createNewItem(this.value, nickname);
+            //createNewItem(this.value, nickname);
+            var $newItem = $("<li class='todo-list-item todolist-item-li'>" +
+                             "<a href='#' class='todo-list-item-checkbox'></a>" +
+                             "<div class='todo-list-item-content'>" +
+                             "<p class='todo-list-item-title'>" + this.value + "</p>" +
+                             "<span class='todo-list-item-desc'>" + nickname + "</span>" +
+                             "</div></li>").prependTo("#todo-list-ul").css({
+                "margin-top": "-82px",
+                "opacity": 0
+            }).addClass("new-item-animation").css({
+                "margin-top": 0,
+                "opacity": 1,
+                "-webkit-transform": "rotateZ(0)",
+                "transform": "rotateZ(0)"
+            });
+
         }
     }).on("blur", function (event) {
     });
