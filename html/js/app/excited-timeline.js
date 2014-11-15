@@ -37,6 +37,7 @@ var getTimeline = function ($scopeLists) {
         for (var i in data) {
             lists.push(new timelineLi(data[i]));
         }
+        console.log(lists);
         $scopeLists = lists;
     });
     /*
