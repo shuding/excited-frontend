@@ -13,7 +13,8 @@ var markItemAnimation = function (id) {
 
     var $placeholder = $("<div></div>").addClass("div-placeholder timeline-list-item timeline-placeholder")
         .css({
-            "height": height + "px"
+            "height": height + "px",
+            "opacity": 0
         }).insertAfter($item);
 
     var todoPos = $("#todo-list").offset();
