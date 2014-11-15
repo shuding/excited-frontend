@@ -1,0 +1,43 @@
+#overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+#warning {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 320px;
+  height: 150px;
+  margin: auto;
+  border-radius: 4px;
+  text-align: center;
+  color: #FFF;
+  overflow: hidden;
+  -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  -ms-transition: opacity .5s ease;
+  -o-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+#warning h3 {
+  margin: 0;
+  padding: 16px;
+  background-color: #FF4763;
+}
+
+#warning p {
+  height: 63px;
+  margin: 0;
+  padding: 16px;
+  line-height: 63px;
+  background-color: #353535;
+}

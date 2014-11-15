@@ -59,8 +59,8 @@ form input:focus {
 form input[type=submit] {
   width: 220px;
   height: 34px;
-  color: #fff;
-  background-color: royalblue;
+  color: #353535;
+  background-color: #ffe43c;
 }
 
 #copyright {
