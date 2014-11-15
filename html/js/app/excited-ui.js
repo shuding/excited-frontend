@@ -62,3 +62,16 @@ var markItemAnimation = function (id) {
         $newTodo.css("position", "inherit");
     }, 800);
 };
+
+$(window).load(function () {
+    var scrollTop = $("#timeline").scrollTop();
+    var scrollFn = function (event) {
+        if ($(this).scrollTop() < scrollTop - 200) {
+            $("#new").addClass("disappear-div").css({
+                "height": 0, "margin": 0, "padding": 0, "opacity": 0
+            });
+            $(this).off("scroll", scrollFn);
+        }
+    };
+    $("#timeline").on("scroll", scrollFn);
+});

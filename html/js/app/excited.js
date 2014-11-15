@@ -74,4 +74,4 @@ app.controller("main", main)
     .controller("todo-list", todoList)
     .controller("follow-list", followList);
 
-checkLogin();
+//checkLogin();
