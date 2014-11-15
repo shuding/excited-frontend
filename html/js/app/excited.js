@@ -45,7 +45,7 @@ var timelineList = function ($scope) {
         }
         console.log(lists);
         $scope.lists = lists;
-        $scope.$apply();
+        //$scope.$apply();
     };
     getTimeline(callback);
 
