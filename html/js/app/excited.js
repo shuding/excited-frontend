@@ -59,7 +59,15 @@ var timelineList = function ($scope) {
 };
 
 var todoList = function ($scope) {
-    $scope.lists = getTodolist();
+    var callback = function (data) {
+        var lists = [];
+        for (var i in data) {
+            lists.splice(0, 0, new todolistLi(data[i]))
+        }
+        $scope.lists = lists;
+        $scope.$apply();
+    };
+    getTodolist(callback);
 
     $scope.addNewTodo = function () {
         if(event.keyCode == 13 && $scope.newTodoText){
@@ -80,8 +88,8 @@ var toolbar = function ($scope) {
 
 app.controller("main", main)
     .controller("toolbar", toolbar)
-    .controller("timeline-list", timelineList)
     .controller("todo-list", todoList)
+    .controller("timeline-list", timelineList)
     .controller("follow-list", followList);
 
 //checkLogin();

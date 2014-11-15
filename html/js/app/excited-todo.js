@@ -3,13 +3,12 @@
 var todolistLi = function (data) {
     // TODO
     this.class = "todolist-item-li";
-    this.title = "Aha";
-    this.desc = data || "EXCITED! This is a todo demo.";
+    this.title = data.item.title;
+    this.desc = data.item.source;
 };
 
 // functions
 
-var getTodolist = function () {
-    return [
-    ];
+var getTodolist = function (callback) {
+    getUserItems(callback);
 };

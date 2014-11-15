@@ -26,6 +26,13 @@ var markItemApi = function (itemId) {
     });
 };
 
-var getUserItems = function () {
+var getUserItems = function (callback) {
+    $.ajax({
+        url: "/api/get-items/",
+        method: "get"
+    }).done(function (data) {
+        callback(data);
+    }).error(function (data) {
 
+    });
 };
