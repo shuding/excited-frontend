@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/excoted-extra.css">
   <script src="js/lib/jquery-2.1.1.min.js"></script>
   <script src="js/lib/angular.min.js"></script>
-  <script src="js/lib/angular-sanitize.min.js"></script>
   <script src="js/app/excited-api.js"></script>
   <script src="js/app/excited-toolbar.js"></script>
   <script src="js/app/excited-timeline.js"></script>
@@ -62,7 +61,7 @@
                   <a class='timeline-list-item-author' href='#'>{{ list.author }}</a>
                   <span class='timeline-list-item-time'>{{ list.time }}</span>
                 </div>
-                <div class='timeline-list-item-content'>{{ list.content }}</div>
+                <div class='timeline-list-item-content'><strong ng-if="list.title">{{ list.title }} </strong>{{ list.content }}</div>
                 <div class="timeline-list-btns">
                   <a href='#' class='timeline-mark-btn' ng-click="markItem(list.id)"><span></span></a>
                   <a href='#' class='timeline-retweet-btn'><span></span></a>

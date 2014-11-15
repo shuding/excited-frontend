@@ -13,8 +13,8 @@ var timelineLi = function (data) {
     this.content = "EXCITED! This is a item demo " + listNumber;
     if (data) {
         this.author = data.source;
-        this.content = "<strong>" + data.title + "</strong><br/>";
-        this.content += data.content;
+        this.title = data.title;
+        this.content = data.content;
     }
 };
 

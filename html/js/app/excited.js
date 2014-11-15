@@ -2,7 +2,7 @@
 var domain = "";//http://172.27.221.110";
 // TODO : end debug
 
-var app = angular.module("excited", ['ngSanitize']);
+var app = angular.module("excited", []);
 
 var redirectLogin = function () {
     $("#overlay").css("display", "inherit");
