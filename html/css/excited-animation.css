@@ -49,11 +49,8 @@
 }
 
 .new-item-animation {
-  -webkit-transform: rotateZ(10deg);
-  -moz-transform: rotateZ(10deg);
-  -ms-transform: rotateZ(10deg);
-  -o-transform: rotateZ(10deg);
-  transform: rotateZ(10deg);
+  margin-top: -82px;
+  opacity: 0;
   -webkit-transition: all .8s ease;
   -moz-transition: all .8s ease;
   -ms-transition: all .8s ease;
