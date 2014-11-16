@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
-    <title>Oval 1</title>
+    <title>big-logo</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="big-logo" sketch:type="MSArtboardGroup" transform="translate(-1.000000, -1.000000)" stroke="#353535" stroke-width="8">
-            <circle id="Oval-1" sketch:type="MSShapeGroup" cx="35" cy="35" r="30"></circle>
+        <g id="big-logo" sketch:type="MSArtboardGroup">
+            <circle id="Oval-1" stroke="#353535" stroke-width="7" sketch:type="MSShapeGroup" cx="35" cy="35" r="30"></circle>
+            <path d="M15,53.7118362 C15,53.7118362 26.968471,65.0037019 41.490981,57.9790306 C52.9139252,52.4536477 53.2053521,43.9431685 50.0682267,43.4167052 C46.9311012,42.890242 47.3274148,45.4456414 42.2874427,45.4456414 C37.419311,45.4456414 36.0833418,40.3341659 37.8138585,37.0759133 C39.5443752,33.8176607 43.4290154,33.5826244 43.4290154,33.5826244 C43.4290154,33.5826244 41.5498528,32.4764651 37.4008533,33.5826244 C33.2518537,34.6887837 30.7893862,36.7084728 25.7313691,35.1455482 C20.673352,33.5826236 18.9173205,27.7954247 21.0123727,21.2892342 C22.9404826,15.3014835 28.795116,9.45774821 41.490981,10.0401987 C67.981962,11.2555303 64.2529601,35.5959969 64.2529601,35.5959969 C64.2529601,35.5959969 61.5597419,63.2734373 39.5443752,63.2734375 C17.5290085,63.2734377 15,53.7118362 15,53.7118362 Z" id="Path-1" fill="#353535" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>
