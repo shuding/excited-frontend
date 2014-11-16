@@ -28,7 +28,7 @@ var markItemApi = function (itemId) {
 
 var getUserItems = function (callback) {
     $.ajax({
-        url: "/api/get-items/",
+        url: "/api/get-items/?item_count=1000",
         method: "get"
     }).done(function (data) {
         callback(data);
