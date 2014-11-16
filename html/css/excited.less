@@ -384,6 +384,11 @@ body,html{
             background-color: @grey2;
             margin-bottom: 16px;
 
+            &.checked{
+              -webkit-filter:brightness(0.7);
+              filter:brightness(0.7);
+            }
+
             &.checked .todo-list-item-checkbox:before{
               .g-abtn;
               content: '\e116';
@@ -401,7 +406,6 @@ body,html{
             }/*.checked .todo-list-item-checkbox:before*/
 
             &.checked .todo-list-item-title,&.checked .todo-list-item-desc{
-              color: @grey2 !important;
               text-decoration: line-through;
               .g-tran;
             }/*.todo-list-item-title*/
@@ -462,7 +466,6 @@ body,html{
         text-align: center;
         padding: 16px;
         color:@grey3;
-        background-color: @grey8;
         border-radius: 4px;
         margin-bottom: 16px;
         .g-abtn;
@@ -471,7 +474,7 @@ body,html{
         &:hover{
           .g-abtn;
           .g-tran;
-          background-color: darken(@grey8, 5%);
+          color:darken(@grey3, 5%);
         }
       }/*.todo-list-show-finished*/
 
@@ -492,8 +495,8 @@ body,html{
           padding: 2px;
           font-family: 'icomoon';
           font-size: 20px;
-          color:@grey1;
-          background-color: @yellow;
+          color:darken(@white, 65%);
+          background-color: darken(@grey1, 5%);
           border-radius: 4px;
           width: 24px;
           height: 24px;
