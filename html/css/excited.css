@@ -835,14 +835,16 @@ html {
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-info {
   float: left;
   color: #ffffff;
-  width: 122px;
+  width: 126px;
   /*.follow-list-name*/
   /*.follow-list-desc*/
 }
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-info .follow-list-name {
+  display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -850,6 +852,8 @@ html {
   margin-top: 2px;
 }
 #page #page-container #follow-list #follow-list-ul .follow-list-item .follow-list-info .follow-list-desc {
+  display: block;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
