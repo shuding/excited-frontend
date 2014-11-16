@@ -2,7 +2,20 @@ var timelineInit = function () {
     //console.log($(".timeline-list-item-new-li"));
 };
 
-var markItemAnimation = function (id) {
+var todoShowOverlay = function (id) {
+    $("#details-main").html(listById[id].fullContent);
+    $("#details-title").html(listById[id].title);
+    $("#details-time").html(listById[id].time);
+    $("#details-source").html(listById[id].author);
+    $("#overlay").css({
+        display: "inherit",
+        opacity: 0
+    }).animate({
+        opacity: 1
+    }, 500);
+};
+
+var markItemAnimation = function (id, itemId) {
     var $item = $("#" + id);
     var width = $item.width(),
         height = $item.height(),
@@ -24,7 +37,7 @@ var markItemAnimation = function (id) {
 
     var $newTodo = $("<li class='todo-list-item'>" +
                      "<a href='#' class='todo-list-item-checkbox'></a>" +
-                     "<div class='todo-list-item-content'>" +
+                     "<div class='todo-list-item-content' onclick='todoShowOverlay(" + itemId + ")'>" +
                      "<p class='todo-list-item-title'>" + title + "</p>" +
                      "<span class='todo-list-item-desc'>" + desc + "</span>" +
                      "</div></li>").css({
