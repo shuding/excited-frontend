@@ -383,6 +383,7 @@ body,html{
             border-radius: @card-border-radius;
             background-color: @grey2;
             margin-bottom: 16px;
+            cursor: pointer;
 
             &.checked{
               -webkit-filter:brightness(0.7);
@@ -456,6 +457,8 @@ body,html{
 
       .todo-list-show-finished{
         .g-bbox;
+        -webkit-text-transform:uppercase; 
+        text-transform:uppercase; 
         -webkit-user-selected:none;
         cursor: pointer;
         user-selected:none;
@@ -465,16 +468,15 @@ body,html{
         font-size: 14px;
         text-align: center;
         padding: 16px;
-        color:@grey3;
+        color:darken(@grey2, 15%);
         border-radius: 4px;
-        margin-bottom: 16px;
         .g-abtn;
         .g-tran;
 
         &:hover{
           .g-abtn;
           .g-tran;
-          color:darken(@grey3, 5%);
+          color:darken(@grey2, 18%);
         }
       }/*.todo-list-show-finished*/
 
@@ -528,7 +530,6 @@ body,html{
         #timeline-list-ul{
           .g-listnone;
           position: relative;
-          padding-bottom: 100%;
 
           &:first-child{
             margin-top: 16px;
@@ -675,6 +676,16 @@ body,html{
             color:@grey4;
             font-size: 14px;
           }
+
+          .timeline-list-loadmore{
+            .g-bbox;
+            padding: 16px;
+            background: none;
+            background-image: url(../images/loading-bars.svg);
+            background-repeat: no-repeat;
+            background-size: 24px 24px;
+            background-position: center center;
+          }/*.timeline-list-loadmore*/
 
         }/*#timeline-list-ul*/
     }/*#timeline*/
@@ -823,9 +834,12 @@ body,html{
       top: 0;
       bottom: 0;
       width: 144px;
+      .g-abtn;
+      .g-tran;
 
       &:hover{
         background-color: rgba(255,255,255,0.05);
+        .g-tran;
       }
 
       span{
@@ -840,7 +854,7 @@ body,html{
         margin-left: -16px;
       }
       span:before{
-        content: '\e604';
+        content: '\e601';
         font-family: 'icomoon';
         font-size: 24px;
         color: @white;
@@ -854,9 +868,12 @@ body,html{
       bottom: 0;
       right: 0;
       width: 144px;
+      .g-abtn;
+      .g-tran;
 
       &:hover{
         background-color: rgba(255,255,255,0.05);
+        .g-tran;
       }
 
       span{
@@ -871,7 +888,7 @@ body,html{
         margin-left: -16px;
       }
       span:before{
-        content: '\e603';
+        content: '\e600';
         font-family: 'icomoon';
         font-size: 24px;
         color: @white;
@@ -894,7 +911,7 @@ body,html{
         margin-left: 24px;
         padding-right: 24px;
         padding-left: 16px;
-        border-left: 8px @grey6 solid;
+        border-left: 8px #e8e8e8 solid;
         margin-top: 36px;
         color: @grey1;
       }/*#details-title*/
@@ -942,13 +959,23 @@ body,html{
       }/*#details-info*/
 
       #details-main{
-        p{
           .g-bbox;
+          color: @grey1;
           width: 100%;
           padding-left: 24px;
           padding-right: 24px;
           margin-bottom: 16px;
-          font-size: 12px;
+          font-size: 14px;
+          line-height: 1.8em;
+          word-wrap:break-word;
+        p{
+          .g-bbox;
+          width: 100%;
+          color: @grey1;
+          padding-left: 24px;
+          padding-right: 24px;
+          margin-bottom: 16px;
+          font-size: 14px;
           line-height: 1.8em;
           word-wrap:break-word;
         }
@@ -956,6 +983,9 @@ body,html{
           width: 100%;
           height: auto;
           margin-bottom: 16px;
+        }
+        a{
+          color: @grey4;
         }
       }/*#details-main*/
 
