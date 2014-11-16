@@ -32,7 +32,7 @@ var timelineLi = function (data) {
             this.avatorSrc = "static/" + data.source + ".png";
         }
         else {
-            this.avatorSrc = "http://1.gravatar.com/avatar/" + md5(email);
+            this.avatorSrc = "http://1.gravatar.com/avatar/" + data.meta.mail_hash;
         }
         this.time = moment(new Date(data.created_on)).fromNow();
         this.author = data.source;
