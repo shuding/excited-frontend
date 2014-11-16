@@ -13,6 +13,9 @@ var todoShowOverlay = function (id) {
     }).animate({
         opacity: 1
     }, 500);
+
+    $(".back-btn, .details-mark-btn, .details-share-btn").css("display", "inherit");
+    $("#userinfo").css("display", "none");
 };
 
 var markItemAnimation = function (id, itemId) {
@@ -116,9 +119,17 @@ $(window).load(function () {
             $(this).animate({
                 opacity: 0
             }, 500);
+
+            $(".back-btn, .details-mark-btn, .details-share-btn").css("display", "none");
+            $("#userinfo").css("display", "inherit");
+
             setTimeout(function () {
                 $("#overlay").css("display", "none");
             }, 500);
         }
+    });
+    
+    $(".todo-list-show-finished").click(function () {
+        $(".todo-list-finished-items").toggleClass("ul-opcaity-zero");
     });
 });

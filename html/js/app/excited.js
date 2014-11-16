@@ -86,6 +86,10 @@ var timelineList = function ($scope) {
         }).animate({
             opacity: 1
         }, 500);
+
+
+        $(".back-btn, .details-mark-btn, .details-share-btn").css("display", "inherit");
+        $("#userinfo").css("display", "none");
     };
 
     timelineInit();
