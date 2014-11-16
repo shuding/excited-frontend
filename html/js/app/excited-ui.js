@@ -148,4 +148,18 @@ $(window).load(function () {
             markItemAnimation("list-item-" + (listNowId + 1));
         }, 500);
     });
+
+    $(".back-btn").click(function () {
+
+        $(this).animate({
+            opacity: 0
+        }, 500);
+
+        $(".back-btn, .details-mark-btn, .details-share-btn").css("display", "none");
+        $("#userinfo").css("display", "inherit");
+
+        setTimeout(function () {
+            $("#overlay").css("display", "none");
+        }, 500);
+    });
 });
