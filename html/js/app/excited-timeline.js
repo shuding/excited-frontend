@@ -31,6 +31,9 @@ var timelineLi = function (data) {
         if ( data.meta.protocol == "rss" ) {
             this.avatorSrc = "static/" + data.source + ".png";
         }
+        else {
+            this.avatorSrc = "http://1.gravatar.com/avatar/" + md5(email);
+        }
         this.time = moment(new Date(data.created_on)).fromNow();
         this.author = data.source;
         this.title = data.title;

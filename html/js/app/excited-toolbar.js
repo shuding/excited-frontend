@@ -1,5 +1,5 @@
 var getUserInfo = function () {
     return {
-        avator: "static/avator-demo.jpeg"
+        avator: "http://1.gravatar.com/avatar/" + md5(email)
     };
 };

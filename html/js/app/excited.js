@@ -23,7 +23,7 @@ var redirectLogin = function () {
     }, 1000);
 };
 
-var checkLogin = function () {
+var checkLogin = function (callback) {
     var signed_in = false;
     $.ajax({
         url: domain + "/api/check-login/",
@@ -35,6 +35,8 @@ var checkLogin = function () {
             redirectLogin();
         email = data.email;
         nickname = data.nickname;
+        if (callback)
+            callback();
     }).error(function () {
         redirectLogin();
     });
@@ -150,12 +152,18 @@ var todoList = function ($scope) {
     };
 };
 
+checkLogin();
+
 var followList = function ($scope) {
     $scope.lists = getFollow();
 };
 
 var toolbar = function ($scope) {
-    $scope.userInfo = getUserInfo();
+    var callback = function () {
+        $scope.userInfo = getUserInfo();
+    };
+    if (!email)
+        checkLogin(callback);
 };
 
 app.controller("main", main)
@@ -163,5 +171,3 @@ app.controller("main", main)
     .controller("todo-list", todoList)
     .controller("timeline-list", timelineList)
     .controller("follow-list", followList);
-
-checkLogin();
