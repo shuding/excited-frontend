@@ -84,7 +84,7 @@
         </div>
         <div id="timeline">
           <ul id="timeline-list-ul" class="{{ classUlShow }}" ng-controller="timeline-list">
-            <li id="{{ list.id }}" class="timeline-list-item {{ list.class }}" ng-repeat="list in lists">
+            <li id="{{ list.id }}" class="timeline-list-item {{ list.class }} list-item-id-{{ list.itemId }}" ng-repeat="list in lists">
               <div ng-if="list.class == 'timeline-list-item-li'">
                 <div class="timeline-list-info">
                   <img class='timeline-list-item-avator' ng-model="list.avatorSrc" src="{{ list.avatorSrc || '' }}">
