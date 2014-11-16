@@ -135,7 +135,7 @@ $(window).load(function () {
 
     $(".details-mark-btn").click(function () {
 
-        $(this).animate({
+        $("#overlay").animate({
             opacity: 0
         }, 500);
 
@@ -151,7 +151,7 @@ $(window).load(function () {
 
     $(".back-btn").click(function () {
 
-        $(this).animate({
+        $("#overlay").animate({
             opacity: 0
         }, 500);
 
