@@ -65,7 +65,7 @@
           <ul id="todo-list-ul">
             <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists | filter: { finished: false }">
               <a href="#" class="todo-list-item-checkbox" ng-click="checkItem( list.id, $event )"></a>
-              <div class="todo-list-item-content">
+              <div class="todo-list-item-content" ng-click="">
                 <p class="todo-list-item-title">{{ list.title }}</p>
                 <span class="todo-list-item-desc">{{ list.desc }}</span>
               </div>
@@ -75,7 +75,7 @@
           <ul class="todo-list-finished-items">
             <li class="todo-list-item {{ list.class }}" ng-repeat="list in lists | filter: { finished: true }">
               <a href="#" class="todo-list-item-checkbox"></a>
-              <div class="todo-list-item-content">
+              <div class="todo-list-item-content" ng-click="">
                 <p class="todo-list-item-title">{{ list.title }}</p>
                 <span class="todo-list-item-desc">{{ list.desc }}</span>
               </div>

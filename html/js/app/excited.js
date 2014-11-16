@@ -4,6 +4,7 @@ var domain = "";//http://172.27.221.110";
 
 var app = angular.module("excited", []);
 var todoListItems = [];
+var listById = {};
 var email = null,
     nickname = null;
 
@@ -55,8 +56,11 @@ var timelineList = function ($scope) {
     var callback = function (data) {
         var lists = [];
         for (var i in data) {
-            if (todoListItems.indexOf( data[i].id ) == -1)
-                lists.push(new timelineLi(data[i]));
+            if (todoListItems.indexOf( data[i].id ) == -1) {
+                var newTL = new timelineLi(data[i]);
+                lists.push(newTL);
+                listById[data[i].id] = newTL;
+            }
         }
         $scope.lists = lists;
         $scope.$parent.timelineList = lists;
@@ -69,7 +73,7 @@ var timelineList = function ($scope) {
 
     $scope.markItem = function (id, itemId) {
         markItemApi(itemId);
-        markItemAnimation(id);
+        markItemAnimation(id, itemId);
     };
 
     $scope.showOverlay = function (list, $event) {
