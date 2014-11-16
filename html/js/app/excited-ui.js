@@ -132,4 +132,20 @@ $(window).load(function () {
     $(".todo-list-show-finished").click(function () {
         $(".todo-list-finished-items").toggleClass("ul-opcaity-zero");
     });
+
+    $(".details-mark-btn").click(function () {
+
+        $(this).animate({
+            opacity: 0
+        }, 500);
+
+        $(".back-btn, .details-mark-btn, .details-share-btn").css("display", "none");
+        $("#userinfo").css("display", "inherit");
+
+        setTimeout(function () {
+            $("#overlay").css("display", "none");
+            markItemApi(alllist[listNowId].itemId);
+            markItemAnimation("list-item-" + (listNowId + 1));
+        }, 500);
+    });
 });

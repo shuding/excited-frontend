@@ -4,9 +4,10 @@ var domain = "";//http://172.27.221.110";
 
 var app = angular.module("excited", []);
 var todoListItems = [];
-var listById = {};
+var listById = {}, alllist;
 var email = null,
     nickname = null;
+var listNowId;
 
 var redirectLogin = function () {
     $("#overlay").css("display", "inherit");
@@ -44,11 +45,13 @@ var main = function ($scope) {
         var index = $scope.timelineList.indexOf($scope.listNow);
         $scope.listNow = $scope.timelineList[index - 1];
         $("#details-main").html($scope.listNow.fullContent);
+        --listNowId;
     }
     $scope.nextList = function () {
         var index = $scope.timelineList.indexOf($scope.listNow);
         $scope.listNow = $scope.timelineList[index + 1];
         $("#details-main").html($scope.listNow.fullContent);
+        ++listNowId;
     }
 };
 
@@ -62,6 +65,7 @@ var timelineList = function ($scope) {
                 listById[data[i].id] = newTL;
             }
         }
+        alllist = lists;
         $scope.lists = lists;
         $scope.$parent.timelineList = lists;
         $scope.$apply();
@@ -78,6 +82,7 @@ var timelineList = function ($scope) {
 
     $scope.showOverlay = function (list, $event) {
         $scope.$parent.listNow = list;
+        listNowId = $scope.lists.indexOf(list);
 
         $("#details-main").html(list.fullContent);
         $("#overlay").css({
