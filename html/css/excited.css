@@ -178,7 +178,7 @@ html {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003177}}
 #toolbar #toolbar-container #navigation a.back-btn {
-  opacity: 0;
+  display: none;
   display: block;
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
@@ -257,7 +257,7 @@ html {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003240}}
 #toolbar #toolbar-container #details-btns .details-share-btn {
-  opacity: 0;
+  display: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -275,7 +275,7 @@ html {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/illusate\/Github\/excited-frontend\/html\/css\/excited\.less}line{font-family:\00003255}}
 #toolbar #toolbar-container #details-btns .details-mark-btn {
-  opacity: 0;
+  display: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
