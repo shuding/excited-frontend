@@ -23,8 +23,6 @@
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 .g-inputnone {
@@ -156,12 +154,9 @@ html {
 }
 #toolbar #toolbar-container #navigation a.back-btn {
   display: none;
-  display: block;
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -188,7 +183,6 @@ html {
   margin-left: -82px;
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
-  -webkit-background-size: 164px 26px;
   background-size: 164px 26px;
 }
 #toolbar #toolbar-container #details-btns {
@@ -212,8 +206,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -315,8 +307,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   background-color: #ffffff;
   float: right;
@@ -324,7 +314,6 @@ html {
   height: 32px;
   border-radius: 50%;
   background-repeat: no-repeat;
-  -webkit-background-size: 32px 32px;
   background-size: 32px 32px;
 }
 /* #toolbar */
@@ -441,8 +430,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   content: '\e116';
   display: block;
@@ -474,8 +461,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   float: left;
   width: 24px;
@@ -542,8 +527,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -553,8 +536,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -578,8 +559,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   content: '\e116';
   display: block;
@@ -661,8 +640,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   color: #969696;
   font-size: 14px;
@@ -739,8 +716,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -794,7 +769,6 @@ html {
   background: none;
   background-image: url(../images/loading-bars.svg);
   background-repeat: no-repeat;
-  -webkit-background-size: 24px 24px;
   background-size: 24px 24px;
   background-position: center center;
 }
@@ -846,8 +820,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   float: left;
   width: 36px;
@@ -955,8 +927,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -996,8 +966,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -1070,8 +1038,6 @@ html {
   text-decoration: none;
   -webkit-tap-highlight-color: #000000;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   width: 16px;
   height: 16px;
