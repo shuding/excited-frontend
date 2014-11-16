@@ -53,7 +53,7 @@ var timelineNewItemLi = function (num) {
 // functions
 
 var getTimeline = function (callback) {
-    getPublicItems("?item_count=100", callback);
+    getPublicItems("?item_count=130", callback);
     /*
     return [
         new timelineLi(),
